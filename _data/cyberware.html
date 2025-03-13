@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">	
+		<h1>Cyberware</h1>
+		<b>Menschlichkeit</b>: <font color="#2b753f">41 / 80</font><br> <!-- Trage hier dein maximale und aktuelle Menschlichkeit ein. -->
+		
+		<br><br>
+		
+		<center>
+		<!-- Beginn der Tabelle mit deinen Neuralverbindungen. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Neuralverbindungen</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td>Interface-Buchse im linken Arm</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>7</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Buchse die es ermöglicht sich mit Netzwerken und Systemen zu verbinden.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Interface-Buchse im rechten Arm</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>7</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Buchse die es ermöglicht sich mit Netzwerken und Systemen zu verbinden.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Chipware-Buchse im Nacken</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>7</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Eine Buchse um Chips auslesen und beschreiben zu können.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit deinem Cyberaudio-Setup. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Cyberaudio</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td>Wanzenfinder</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>2</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Piepst wenn sich innerhalb von 2 Metern eine Wanze, ein Funk- oder ein Abhörgerät befindet.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Störer/Entstörer</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>2</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Kann Kommunikation verschlüsseln und entschlüsseln, so wie Signale in 2 Metern Umkreis blockieren.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+
+		<br><br><br><br>
+
+		<!-- Beginn der Tabelle mit den Funktionen des linken Cyberauges. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberauge Links</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<!-- Hier erzeugen wir absichtlich keinen Abstand mit "br", da diese Tabellen nebeneinander dargestellt werden sollen. -->
+		<!-- Beginn der Tabelle mit den Funktionen des rechten Cyberauges. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberauge Rechts</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit den Funktionen des linken Cyberarms. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberarm Links</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<!-- Hier erzeugen wir absichtlich keinen Abstand mit "br", da diese Tabellen nebeneinander dargestellt werden sollen. -->
+		<!-- Beginn der Tabelle mit den Funktionen des rechten Cyberarms. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberarm Rechts</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit den Funktionen des linken Cyberbeins. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberbein Links</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<!-- Hier erzeugen wir absichtlich keinen Abstand mit "br", da diese Tabellen nebeneinander dargestellt werden sollen. -->
+		<!-- Beginn der Tabelle mit den Funktionen des rechten Cyberbeins. -->
+		<table id="myTable" style="width:45%;display:inline">
+			<tr class="header">
+				<th>Cyberbein Rechts</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br><br><br>
+		
+		<!-- Beginn der Tabelle mit der internen Cyberware. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Interne Cyberware</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td>Neuralverbindung</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>7</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Künstliches Nervensystem, dass für die Verwendung von Neuralsystemen und Subdermalgriffen benötigt wird.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Cyberaudio</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>7</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Im Schädel implementiertes Audiofeedbacksystem.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Verhütungsimplantat</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>-</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Verhindert das Schwanger werden.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit der externen Cyberware. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Externe Cyberware</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td>EMP Fäden</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>-</center></td> <!-- Menschlichkeitsverlust -->
+				<td>-</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td>Biomonitor</td> <!-- Bezeichnung der Cyberware. -->
+				<td><center>-</center></td> <!-- Menschlichkeitsverlust -->
+				<td>Zeigt Gesundheitsstatus am linken Unterarm.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit der Fashionware. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Fashionware</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br>
+		
+		<!-- Beginn der Tabelle mit der FBogware. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Bogware</th>
+				<th><center>MV</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+			<tr>
+				<td></td> <!-- Bezeichnung der Cyberware. -->
+				<td><center></center></td> <!-- Menschlichkeitsverlust -->
+				<td></td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		</center>
+	  </div>
+	</body>
+</html>

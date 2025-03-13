@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">
+		
+			<!-- Hier beginnt die Tabelle für deine Unterkünfte. Diese Tabelle hat zusätzlich eine Suchfunktion. -->
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Gib einen Namen ein..." title="Type in a name">
+			<table id="myTable">
+			  <tr class="header">
+				<th>Name</th>			<!-- Name des Ortes -->
+				<th>Stadt</th>			<!-- Stadt -->
+				<th>Stadtteil</th>		<!-- Stadtteil -->
+				<th>ID</th>				<!-- ID auf der Legende der beigefügten Karte -->
+				<th>Lage</th>			<!-- Bezirk im Stadtteil -->
+				<th>Beschreibung</th>	<!-- Beschreibung -->
+			  </tr>
+			  <!-- Um weitere Ortschaften einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			  <tr>
+				<td>Afterlife</td> <!-- Name des Ortes -->
+				<td>Night City</td> <!-- Stadt -->
+				<td>Watson</td> <!-- Stadtteil -->
+				<td><center>1</center></td> <!-- ID auf der Legende der beigefügten Karte -->
+				<td>Bezirk Little China, im Südwesten.</td> <!-- Bezirk im Stadtteil -->
+				<td>Bekannte Bar für Fixer und Allerlei, die Jobs suchen oder zu vergeben haben.</td> <!-- Beschreibung -->
+			  </tr>
+			</table>
+			
+			<!-- Hier beginnt eine javascript Funktion. Es ist die Suchfunktion in der Tabelle für die Ortschaften. Nichts verändern wenn du kein javascript kannst. -->
+			<script>
+				function myFunction()
+				{
+					var input, filter, table, tr, td, i, txtValue;
+					input = document.getElementById("myInput");
+					filter = input.value.toUpperCase();
+					table = document.getElementById("myTable");
+					tr = table.getElementsByTagName("tr");
+					for (i = 0; i < tr.length; i++)
+					{
+						td = tr[i].getElementsByTagName("td")[0];
+						if (td)
+						{
+							txtValue = td.textContent || td.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1)
+							{
+								tr[i].style.display = "";
+							}
+							else
+							{
+								tr[i].style.display = "none";
+							}
+						}
+					}
+				}
+			</script>
+			
+			<br><br>
+			
+			 <!-- Hier kannst du Karten und Bilder von Ortschaften eintragen. Dabei musst du folgendes beachten:
+				1. Das Bild muss im Ordner "images" liegen.
+				2. Der Name und die Endung des Bildes muss angegeben werden. Siehe "watson.png".
+				3. Um einen Absatz ( eine neue Reihe für Bilder) zu machen, nutzt du "<br>". Im Beispiel habe ich zwei Bilder eingetragen und 
+					dann <br> genutzt um einen neuen Absatz zu machen, da nur zwei Bilder bei meiner Auflösung nebeneinander passen. Anpassungen 
+					können bei "width" und "height" vorgenommen werden. Das sind Breite und Höhe in Pixeln.-->
+			<img src="images/watson.png" width="800" height="700"> 
+			<img src="images/Santo Domingo.png" width="800" height="600">
+			<br>
+		</div>
+	</body>
+</html>

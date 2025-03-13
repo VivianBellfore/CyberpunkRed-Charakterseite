@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">		
+			<center>
+			<!-- Trage hier den Namen des PDF für deinen Charakter ein. Das PDF muss im Ordner "_data" liegen. -->
+			<!-- Charakterbogen auf deutsch: https://truant.com/wp-content/uploads/2023/02/CP-Charakterblatt-v2-bearbeitbar.pdf
+				Lade dir die PDF herunter, fülle sie aus und lege sie dann in den Ordner "_data" hinein.
+				Kann aus Copyrightgründen nicht in der Vorlage mitgeliefert werden. Tip: Der Firefoxbrowser macht das PDF bearbeitbar ohne irgendwelche Addons. -->
+			<iframe src="Charakter.pdf" style="width:100%; height:890px;" frameborder="0"></iframe>
+			</center>	
+		</div>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">	
+		<h1>Cyberdeck </h1>
+		<br>
+		Hervorragende Qualität mit 0/9 Hardwareslots belegt.
+		<br><br>
+		
+		<center>
+		<!-- Beginn der Tabelle mit den Hardwareinstallationen die sich aktuell auf deinem Cyberdeck befinden. -->
+		<table id="myTable" style="width:75%">
+				<tr class="header">
+				<th>Hardware</th>
+				<th><center>Slotverbrauch</center></th>
+				<th>Beschreibung</th>
+			</tr>
+			<!-- Um weitere Kostenpunkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			<tr>
+				<td>Schaltkreisabschirmung</td> <!-- Name -->
+				<td><center>-</center></td> <!-- Slotverbrauch -->
+				<td>EMP-Effekte, Mikrowellenimpulse oder Effekte von Programmen die kein Schwarzes ICE sind, können das Cyberdeck nicht zeitweise abschalten, außer Betrieb setzen oder zerstören.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br><br><br>
+		
+		<!-- Beginn der Tabelle mit den aktuell installierten Programmen auf deinem Cyberdeck. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Installierte Programme</th>
+				<th><center>Klasse</center></th>
+				<th><center>WAH</center></th> <!-- Wahrnehmung -->
+				<th><center>TEM</center></th> <!-- Tempo -->
+				<th><center>ANG</center></th> <!-- Angriffswert -->
+				<th><center>VER</center></th> <!-- Verteidigungswert -->
+				<th><center>ITG</center></th> <!-- Integrität -->
+				<th>Beschreibung</th>
+			</tr>
+			<!-- Um weitere Kostenpunkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. Bedenke dabei die Größe deines Decks. -->
+			<tr>
+				<td>Bannhammer</td> <!-- Name -->
+				<td><center>Anti-Prog. ANG</center></td> <!-- Klasse -->
+				<td><center>0</center></td> <!-- Wahrnehmung -->
+				<td><center>0</center></td> <!-- Tempo -->
+				<td><center>1</center></td> <!-- Angriffswert -->
+				<td><center>0</center></td> <!-- Verteidigungswert -->
+				<td><center>0</center></td> <!-- Integrität -->
+				<td>Richtet bei allen Programmen die kein ICE sind 3W6 Schaden an, bei ICE richtet es 2W6 Schaden an.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		
+		<br><br><br><br>
+		
+		<!-- Beginn der Tabelle mit den Programmen die sich in deinem Besitz aber auf Chips befinden. -->
+		<table id="myTable" style="width:75%">
+			<tr class="header">
+				<th>Programme auf Chips</th>
+				<th><center>Klasse</center></th>
+				<th><center>WAH</center></th> <!-- Wahrnehmung -->
+				<th><center>TEM</center></th> <!-- Tempo -->
+				<th><center>ANG</center></th> <!-- Angriffswert -->
+				<th><center>VER</center></th> <!-- Verteidigungswert -->
+				<th><center>ITG</center></th> <!-- Integrität -->
+				<th>Beschreibung</th>
+			</tr>
+			<!-- Um weitere Kostenpunkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			<tr>
+				<td>Bannhammer</td> <!-- Name -->
+				<td><center>Anti-Prog. ANG</center></td> <!-- Klasse -->
+				<td><center>0</center></td> <!-- Wahrnehmung -->
+				<td><center>0</center></td> <!-- Tempo -->
+				<td><center>1</center></td> <!-- Angriffswert -->
+				<td><center>0</center></td> <!-- Verteidigungswert -->
+				<td><center>0</center></td> <!-- Integrität -->
+				<td>Richtet bei allen Programmen die kein ICE sind 3W6 Schaden an, bei ICE richtet es 2W6 Schaden an.</td> <!-- Beschreibung der Cyberware. -->
+			</tr>
+		</table>
+		</center>
+	  </div>
+	</body>
+</html>

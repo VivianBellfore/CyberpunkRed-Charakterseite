@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">
+		
+			<h1>Geld & Ausgaben</h1>
+			<b>Kontostand</b>: <font color="#2b753f">2250</font> <!-- Gebe hier deinen aktuellen Kontostand an. -->
+
+			<br><br><br>
+			
+			<!-- Hier beginnt die Tabelle für Kostenausgaben. -->
+			<table id="myTable" style="width:35%">
+				<tr class="header">
+					<th>Posten</th>
+					<th><center>Summe</center></th>
+				</tr>
+				<!-- Um weitere Kostenpunkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+				<tr>
+					<td>Apartment</td> <!-- Bezeichnung des Kostenpunktes. -->
+					<td><center>300</center></td> <!-- Zu zahlende Summe. -->
+				</tr>
+				<tr>
+					<td>Kibble</td>
+					<td><center>100</center></td>
+				</tr>
+				<!-- Lasse die erste Zeile frei und addiere alle Kosten zusammen für die zweite Zeile. -->
+				<tr>
+					<td>Monatliche Ausgaben gesammt</td>
+					<td style="color:#b3453b;"><center>-400</center></td>
+				</tr>
+			</table>
+			<br><br><br>
+			
+			<!-- Hier beginnt die Tabelle für deine Waffen. -->
+			<h1>Waffen</h1>
+			<table id="myTable">
+			  <tr class="header">
+				<th>Name</th>							<!-- Name der Waffe. -->
+				<th><center>Ausgerüstet</center></th>   <!-- Ist das Rüstungsteil ausgerüstet? -->
+				<th><center>Anzahl</center></th>		<!-- Anzahl im Besitz. -->
+				<th>Typ</th>							<!-- Typ der Waffe. -->
+				<th><center>AF</center></th>			<!-- Angriffsfolge der Waffe. -->
+				<th><center>Hände</center></th>			<!-- Benötigte Hände zum nutzen. -->
+				<th><center>Magazin</center></th>		<!-- Magazingtöße der Waffe. -->
+				<th><center>Schaden</center></th>		<!-- Schaden der Waffe. -->
+				<th><center>Verbergen</center></th>		<!-- Kann verborgen werden? -->
+				<th><center>Qualität</center></th>		<!-- Die Qualität der Waffe. -->
+				<th><center>Anbauteile</center></th>	<!-- Welche Anbauteile hat die Waffe. -->
+			  </tr>
+			  <!-- Um weitere Waffen einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			  <tr>
+				<td>Schwere Pistole</td> 							<!-- Name der Waffe. -->
+				<td><center>✔️</center></td> 						<!-- Wenn ausgerüstet ✔️ nutzen. -->
+				<td><center>1</center></td>                         <!-- Anzahl im Besitz. -->
+				<td>Schwere Pistole</td>                            <!-- Typ der Waffe. -->
+				<td><center>2</center></td>                         <!-- Angriffsfolge der Waffe. -->
+				<td><center>1</center></td>                         <!-- Benötigte Hände zum nutzen. -->
+				<td><center>8</center></td>                         <!-- Magazingtöße der Waffe. -->
+				<td><center>3W6 + 1 (Qualität)</center></td>        <!-- Schaden der Waffe. -->
+				<td><center>Ja</center></td>                        <!-- Kann verborgen werden? -->
+				<td><center>Kostspielig</center></td>               <!-- Die Qualität der Waffe. -->
+				<td><center>Schalldämpfer (Premium)</center></td>	<!-- Welche Anbauteile hat die Waffe. -->
+			  </tr> 
+			</table>
+			<br><br><br>
+						
+			<h1>Rüstungen</h1>
+			<!-- Hier beginnt die Tabelle für deine Rüsungen. -->
+			<table id="myTable">
+			  <tr class="header">
+				<th>Name</th>							<!-- Name der Rüstung. -->
+				<th><center>Ausgerüstet</center></th>   <!-- Ist das Rüstungsteil ausgerüstet? -->
+				<th><center>Anzahl</center></th>        <!-- Anzahl im Besitz. -->
+				<th><center>Typ</center></th>           <!-- Wo wird die Rüstung getragen?. -->
+				<th><center>SW</center></th>            <!-- Schutzwert -->
+				<th><center>Malus</center></th>         <!-- Panzerungsmalus -->
+			  </tr>
+			  <!-- Um weitere Rüstungsteile einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			  <tr>
+				<td>Leichter Panzeranzug</td> 		<!-- Name der Rüstung. -->
+				<td><center>✔️</center></td> 		<!-- Wenn ausgerüstet ✔️ nutzen. -->
+				<td><center>1</center></td> 		<!-- Anzahl im Besitz. -->
+				<td><center>Körper</center></td> 	<!-- Wo wird die Rüstung getragen?. -->			
+				<td><center>11</center></td> 		<!-- Schutzwert -->
+				<td><center>-</center></td> 		<!-- Panzerungsmalus -->
+			  </tr>
+			</table>
+			<br><br><br>
+			
+			<!-- Hier beginnt die Tabelle für deine Gegenstände. Diese Tabelle hat zusätzlich eine Suchfunktion. -->
+			<h1>Gegenstände</h1>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Gib einen Namen ein..." title="Type in a name">
+			<table id="tableItems">
+			  <tr class="header">
+				<th>Name</th>
+				<th><center>Anzahl</center></th>
+				<th>Beschreibung</th>
+			  </tr>
+			  <!-- Um weitere Gegenstände einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+			  <tr>
+				<td>Agent</td> 						<!-- Name des Gegenstandes -->
+				<td><center>1</center></td> 		<!-- Anzahl im Besitz -->
+				<td>AI gesteuertes Smartphone.</td> <!-- Beschreibung -->
+			  </tr>
+			  <tr>
+				<td>VR Brille</td> 										<!-- Name des Gegenstandes -->
+				<td><center>1</center></td> 							<!-- Anzahl im Besitz -->
+				<td>Brille um NET Oberflächen sehen zu können.</td> 	<!-- Beschreibung -->
+			  </tr>
+			</table>
+			
+			<!-- Hier beginnt eine javascript Funktion. Es ist die Suchfunktion in der Itemliste. Nichts verändern wenn du kein javascript kannst. -->
+			<script>
+			function myFunction() {
+			  var input, filter, table, tr, td, i, txtValue;
+			  input = document.getElementById("myInput");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("tableItems");
+			  tr = table.getElementsByTagName("tr");
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  txtValue = td.textContent || td.innerText;
+				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				}
+			  }
+			}
+			</script>
+			<br>
+		</div>
+	</body>
+</html>

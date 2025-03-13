@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">	
+			<center>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<h1>Initiative</h1>
+				REF + 1W10
+			</div>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<h1>Schußwaffen</h1>
+				REF + Waffenlevel + 1W10
+			</div>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<h1>Nahkampf</h1>
+				<!-- text color fade generator: https://patorjk.com/text-color-fader/ -->
+				<b style="color:violet;"><span style="color: #d169c5">P</span><span style="color: #b275bd">r</span><span style="color: #9482b5">o</span><span style="color: #758ead">b</span><span style="color: #569aa6">e</span><span style="color: #38a79e"> </span><span style="color: #19b396">1</span></b>: GES des Angreifers + Nahkampflevel des Angreifers + 1W10<br>
+				<b style="color:violet;"><span style="color: #d169c5">P</span><span style="color: #b275bd">r</span><span style="color: #9482b5">o</span><span style="color: #758ead">b</span><span style="color: #569aa6">e</span><span style="color: #38a79e"> </span><span style="color: #19b396">2</span></b>: GES des Zieles + Ausweichenlevel des Zieles + 1W10
+			</div>
+			
+			<br><hr><br>
+			
+			<!-- Ändere diesten Titel zu deiner Rolle. -->
+			<h1><b>MediTech Proben</b></h1>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<!-- Hier kannst du eine Würfelprobe eintragen die für deine Rolle speziell ist. Kopiere die erste Box hier drunter von <div> bis </div> und ändere die Überschrift und Beschreibung wenn du mehrere Proben schreiben willst. -->
+				<h1>MediScanner</h1>
+				Erste Hilfe (base) + Notfallmedizin (base) + 2 
+			</div>
+			</center>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">
+			<!-- Ein nützliches Bild mit Blutgruppentypen. Liegt in Ordner "images". -->
+			<img src="images/Blutgruppen.png" width="40%">
+			
+			<!-- "br" ist ein Umschlag oder Absatz. Dies kann genutzt werden um Abstände zu erzeugen. -->
+			<br><br>
+			
+			<h1>Patientenakten</h1>
+			<br>
+			
+			<!-- Hier wird ein ausklappbares Feld für den ersten Patienten erzeugt. Um einen weiteren Patienten hinzuzufügen kopiere alles einschließlich von "<details>" bis einschließlich "</details>". -->
+			<details>
+				<!-- Hier beginnt die Tabelle für die grundlegenden Patientendaten. -->
+				<summary>Mano Ash</summary>
+				
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<h3>Informationen</h3>
+					
+					<!-- Beginn der Tabelle mit der Grunddaten des Patienten. -->
+					<table id="myTable">
+						<tr class="header">
+							<th>Geburtsjahr</th>	<!-- Das Geburtsjahr des Patienten. -->
+							<th>Blutgruppe</th>     <!-- Die Blugruppe des Patienten. -->
+							<th>Geschlecht</th>     <!-- Das biologische Geschlecht des Patienten. -->
+							<th>Organspender</th>   <!-- Ist der Patient Organspender? -->
+							<th>Allergien</th>      <!-- Hat der Patient Allergien? -->
+							<th>Drogenkonsum</th>   <!-- Nimmt der Patient legale oder illegale Drogen zu sich. -->
+							<th>Medikation</th>     <!-- Nimmt der Patient regelmäßig Medikamente ein? -->
+						</tr>
+						<!-- Um weitere Punkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+						<tr>
+							<td>2048</td> 		<!-- Das Geburtsjahr des Patienten. -->
+							<td>0-</td> 		<!-- Die Blugruppe des Patienten. -->
+							<td>männlich</td> 	<!-- Das biologische Geschlecht des Patienten. -->
+							<td>Nein</td> 		<!-- Ist der Patient Organspender? -->
+							<td>Zimt</td> 		<!-- Hat der Patient Allergien? -->
+							<td>Nein</td> 		<!-- Nimmt der Patient legale oder illegale Drogen zu sich. -->
+							<td>Nein</td> 		<!-- Nimmt der Patient regelmäßig Medikamente ein? -->
+						</tr>
+					</table>
+					
+					<br><br>
+					
+					<!-- Hier beginnt die Tabelle für die Cyberware des Patienten. -->
+					<h3>Cyberware</h3>
+					
+					<!-- Beginn der Tabelle mit der Cyberware des Patienten. -->
+					<table id="myTable">
+						<tr class="header">
+							<th>Bezeichnung</th>	<!-- Die Bezeichnung der Cyberware -->
+							<th>Qualität</th>       <!-- RP Beschreibung der Qualität. -->
+							<th>Einbaudatum</th>    <!-- Einbau Jahr und oder Datum -->
+						</tr>
+						<!-- Um weitere Punkte einzutragen, kopiere einfach den ersten Tabelleneintrag hier drunter von einschließlich <tr> bis einschließlich </tr> und ändere die Eintragungen. -->
+						<tr>
+							<td>Cyberauge (r. l.)</td> 		<!-- Die Bezeichnung der Cyberware -->
+							<td>Gebraucht gut Qualität</td> <!-- RP Beschreibung der Qualität. -->
+							<td>2069</td> 					<!-- Einbau Jahr und oder Datum -->
+						</tr>
+					</table>
+				</div>
+			</details>
+		</div>
+	</body>
+</html>

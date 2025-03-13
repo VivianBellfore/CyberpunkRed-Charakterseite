@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Characterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a href="dices.html">Würfelproben</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a style="background-color:black; color:#818181" href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">
+			<center>
+			<h1>Lexikon</h1>
+
+			<table id="myTable" style="width:75%">
+				<tr class="header">
+					<th><center>Begriff</center></th>
+					<th>Bedeutung</th>
+				</tr>
+				<!-- Um weitere Punkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+				<tr>
+					<td>Architektur</td> <!-- Begriff -->
+					<td>Meist NET Architekrur, ist ein Digitales Konstrukt (real befindlich in einem nicht beweglichem Serverreck) in dem Daten gelagert oder verarbeitet werden. Wird in der Regel von Firmen oder Vereinigungen genutzt.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Cyberdeck</td> <!-- Begriff -->
+					<td>Ein tragbarer Computer in der größe eines Smartphones von heute. Es beinhaltet Programme und wird von Netrunnern genutzt.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Dämon</td> <!-- Begriff -->
+					<td>Schwarzes ICE KI Programm das nur auf NET Architekturen laufen kann.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Desintigriert</td> <!-- Begriff -->
+					<td>Installiertes aber deaktiviertes Programm auf einem Deck oder in einer Architektur.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Integriert</td> <!-- Begriff -->
+					<td>Installiert und aktiv laufend auf einem Deck oder einer Architektur.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Interface</td> <!-- Begriff -->
+					<td>Damit ist die Rollenfähigkeit der Netrunner gemeint. Sie bestimmt die Fähigkeit mit Programmen umzugehen.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Intigrität - ITG</td> <!-- Begriff -->
+					<td>Die Trefferpunkte eines Programms. Fallen die ITG auf 0 wird das Programm desintigriert.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Meta</td> <!-- Begriff -->
+					<td>Die meist genutzte Programmiersprache, erfunden ca 2035.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Zerstört</td> <!-- Begriff -->
+					<td>Das Programm ist zerstört und kann nicht mehr repariert oder neu installiert werden.</td> <!-- Bedeutung -->
+				</tr>
+			</table>
+			
+			</center>
+		
+			<br><br><br><br>
+		
+			<h1> Kampfhandlungen</h1>
+		
+			<br><br>
+		
+			Ein Netrunner hat eine Bewegung (sofern er nicht im NET geistig eingeklinkt ist) und entweder eine Fleischaktion oder NET-Aktionen (die Anzahl hängt vom "Interface" Level ab) zur verfügung.<br>
+			◽ 1 Bewegung + 1 Fleischaktion<br>
+			◽ 1 Bewegung + 3 NET-Aktionen<br>
+		
+			<br><br>
+
+			<!-- Beginn der Tabelle mit den möglichen NET-Aktionen je nach Interface Level. -->
+			<table id="myTable" style="width:35%">
+				<tr class="header">
+					<th>Interface: 1-3</th>
+					<th>Interface: 4-6</th>
+					<th>Interface: 7-9</th>
+					<th>Interface: 10</th>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+			</table>
+		
+			<br><br><br><br>
+		
+			<h1>NET-Aktionen</h1>
+			<br>
+			Dies sind mögliche Aktionen in einem Netrun:<br>
+			◽ Ein-/Ausklinken<br>
+			◽ Interface-App einsetzen<br>
+			◽ Programm aktivieren/deaktivieren<br>
+			◽ Sonstiges (besondere Aktionen mit der SL abgesprochen)<br>
+		
+			<br><br><br><br>
+		
+			<h1>Interface-Apps</h1>
+			<br>
+		
+			<details><summary> Scanner - Suchen nach Zugangsknoten.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Wende eine Fleischaktion auf um nach Analogen Zugangsknoten in deiner Umgebung zu suchen. Oder wende eine NET-Aktion auf um nach einem 
+					digitalem Signal und Zugangsknoten zu suchen.<br><br>
+					Der Spieler muss nicht würfeln um das Signal oder den Zugang zu finden. Der Spielleiter kann jedoch eine Wahrnehmungsprobe für den 
+					analogen Zugang oder eine Interface + 1W10 Probe für einen digitalen Zugang würfeln lassen.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Hintertür - Passwörter hacken.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Wende eine NET-Aktion auf um ein Passwort oder eine andere Sicherheitsbarriere zu knacken.<br><br>
+					<b>Würfel</b>: Interface + 1W10 gegen die SG des Passworts oder der Sicherheitsbarriere.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Deckmantel - Verberge deine Anwesenheit und Spuren die zu dir zurück führen.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Wende eine NET-Aktion auf um deine Spuren zu verdecken. Du löschst deine Identität und Logs die zeigen was du getan hast und welche Daten 
+					verändert wurden. Ein feindlicher Netrunner kann mit Kundschafter versuchen diesen Deckmantel zu zerstören um doch noch an die Daten zu kommen.<br><br>
+					<b>Würfel</b>: Interface + 1W10 bestimmt den Erfolg und die Stärke des Deckmantels.<br><br>
+					Um den Deckmantel zu lüften muss der feindliche Netrunner nun die gewürfelte Stärke des Deckmantels übertreffen.<br>
+					<b>Würfel</b>: Interface + 1W10 gegen die Stärke des Deckmantels.<br><br>
+					</center>
+				</div>
+			</details>
+		
+			◽ Kontrolle - Zugriff und Kntrolle über eine App oder ein Gerät übernehmen und dieses steuern.<br>
+			◽ Auswertung - Einen Datensatz analysieren oder den Verwendungszweck einer App.<br>
+			◽ Kundschafter - Nicht verschlüsselte oder gesperrte Architektur einsehen und deren Inhalt überblicken.<br>
+			◽ Abgang - Flucht aus einem Kampf.<br>
+			◽ Virus - Ein eigenes Programm einschleusen um eine Architektur zu übernehmen/infizieren.<br>
+			◽ Schocker - Angriff gegen einen anderen Netrunner oder ein Programm.<br>
+		
+			<br><br><br><br>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<center>
+						Dein Interface + Programm-ANG + 1W10<br>
+						oder ICE-ANG + 1W10<br>
+						<br>
+						gegen
+						<br>
+						Interface des Ziels + 1W10<br>
+						oder Programm-VER/ICE-VER + 1W10
+				</center>
+			</div>
+		</div>
+	</body>
+</html>
