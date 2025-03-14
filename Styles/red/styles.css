@@ -1,0 +1,89 @@
+/* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
+body {
+	font-family: "Arial", sans-serif;
+	background-color: black;
+	color: #cbc8cc;	
+}
+.sidebar {
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: linear-gradient(black 0%, #FF1919 10%, #420606 90%, black 100%);
+	overflow-x: hidden;
+	padding-top: 50px;
+}
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	display: block;
+}
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+.main {
+	margin-left: 240px;
+	padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
+
+/* Hier folgen sytles für bestimmte functionen, am besten nicht ändern. */
+hr { 
+	width: 95%; 
+	height: 5px; 
+	border-color: black;
+	background: black;
+}
+.transparent-box {
+	border: 2px solid #818181;
+	margin: 20px;
+	padding: 20px;
+}
+
+/* Hier wird eine standart Tabelle formatiert. Eine Änderung hier wird fast alle Tabellen betreffen. */
+#myTable {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+#myTable th, #myTable td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+#myTable tr :nth-child(even) {
+	background-color: #2e2d2e;
+}
+#myInput {
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	background-color: #2e2d2e;
+	color: white;
+	width: 50%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
+}
+
+/* Hier wird die Tabelle für Gegenstände in "inventory.html" formatiert. */
+#tableItems {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+#tableItems th, #tableItems td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+#tableItems tr :nth-child(even) {
+	background-color: #2e2d2e;
+}
