@@ -3,6 +3,15 @@ Sorry this project is completly in german and I currently dont plan to upload an
 
 <br>
 
+# Was ist das hier?
+Eine Zusammenstellung von html Seiten die dir eine Übersicht über deinen Charakter geben soll.<br>
+Die Seiten enthalten deine Charakterdaten und weitere nützliche Infos zum Pen and Paper Spiel Cyberpunk Red.<br>
+Diese Übersicht soll dir beim spielen helfen und du kannst sie auch deiner SL und deinen Mitspielern zeigen.<br>
+Hier ist eine meiner Charakterseiten als Beispiel:
+![image](https://github.com/user-attachments/assets/38700bad-c946-4863-947e-5fc27bf213eb)<br>
+
+<br>
+
 # Welche Dateien hinzugefügt werden müssen:
 1. Charakterbild. Erstelle oder suche dir ein Bild für deinen Charakter und lege es im Ordner "images" ab.
 	Kopiere dir den Namen des Bildes, samt der Dateiendung und trage dieses in der Datei "Charakterblatt.html" in Zeile 47 ein.
@@ -31,7 +40,7 @@ Falls du das Programm nicht hast, es ist kostenlos: https://www.getpaint.net/
 Alles wurde möglichst genau von mir beschrieben. Du kannst nur die Texte und Werte austauschen die bereits existieren oder weitere Informationen hinzufügen.
 Bei Fragen und Problemen helfe ich gerne über Discord weiter. Das hier ist mein Server: https://discord.gg/UzuFZjGEef
 
-<br><br><br><br>
+<br><br>
 
 # Kann ich mehr Bilder hinzufügen?
 Klar! Lege neue Bilder am besten im Ordner "images" ab. Du kannst sie dann überall auf den Seiten nutzen indem du folgendes schreibst:<br>
