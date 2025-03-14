@@ -41,6 +41,23 @@
 		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
 		<div class="main">
 			<center>
+			
+			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+			<div class="transparent-box" style="width:80%">
+				<center>
+						<h1>Gewalt im NET</h1><br>
+						Dein Interface + Programm-ANG + 1W10<br>
+						oder ICE-ANG + 1W10<br>
+						<br>
+						gegen<br>
+						<br>
+						Interface des Ziels + 1W10<br>
+						oder Programm-VER/ICE-VER + 1W10<br>
+						<br><br>
+						<h5>Bei einem Treffer erleidet das Ziel den Effekt des Programmes.</h5>
+				</center>
+			</div>
+			
 			<h1>Lexikon</h1>
 
 			<table id="myTable" style="width:75%">
@@ -64,6 +81,10 @@
 				<tr>
 					<td>Desintigriert</td> <!-- Begriff -->
 					<td>Installiertes aber deaktiviertes Programm auf einem Deck oder in einer Architektur.</td> <!-- Bedeutung -->
+				</tr>
+				<tr>
+					<td>Fleischaktion</td> <!-- Begriff -->
+					<td>Eine körperliche Handlung in der realen Welt, wie Ausweichen oder in Deckung gehen.</td> <!-- Bedeutung -->
 				</tr>
 				<tr>
 					<td>Integriert</td> <!-- Begriff -->
@@ -91,13 +112,16 @@
 		
 			<br><br><br><br>
 		
-			<h1> Kampfhandlungen</h1>
+			<h1> Handlungen pro Zug</h1>
 		
-			<br><br>
+			<br>
 		
-			Ein Netrunner hat eine Bewegung (sofern er nicht im NET geistig eingeklinkt ist) und entweder eine Fleischaktion oder NET-Aktionen (die Anzahl hängt vom "Interface" Level ab) zur verfügung.<br>
+			Ein Netrunner hat eine der beiden folgenden Handlungen pro Zug zur verfügung:<br>
 			◽ 1 Bewegung + 1 Fleischaktion<br>
 			◽ 1 Bewegung + 3 NET-Aktionen<br>
+			<br>
+			Bewegung und Fleischaktion können nur ausgeführt werden, wenn der Netrunner nicht geistig im NET eingeklingt ist.<br>
+			Wie viele NET-Aktionen ein Netrunner zur verfügung hat richtet sich nach seinem Interface-Level.
 		
 			<br><br>
 
@@ -149,7 +173,7 @@
 				<div class="transparent-box" style="width:80%">
 					<center>
 					Wende eine NET-Aktion auf um ein Passwort oder eine andere Sicherheitsbarriere zu knacken.<br><br>
-					<b>Würfel</b>: Interface + 1W10 gegen die SG des Passworts oder der Sicherheitsbarriere.
+					<b>Probe</b>: Interface + 1W10 gegen die SG des Passworts oder der Sicherheitsbarriere.
 					</center>
 				</div>
 			</details>
@@ -159,35 +183,99 @@
 				<div class="transparent-box" style="width:80%">
 					<center>
 					Wende eine NET-Aktion auf um deine Spuren zu verdecken. Du löschst deine Identität und Logs die zeigen was du getan hast und welche Daten 
-					verändert wurden. Ein feindlicher Netrunner kann mit Kundschafter versuchen diesen Deckmantel zu zerstören um doch noch an die Daten zu kommen.<br><br>
-					<b>Würfel</b>: Interface + 1W10 bestimmt den Erfolg und die Stärke des Deckmantels.<br><br>
+					verändert wurden. Ein feindlicher Netrunner kann mit Kundschafter versuchen diesen Deckmantel zu zerstören um doch noch an die Daten zu kommen.<br>
+					<br>
+					<b>Probe</b>: Interface + 1W10 bestimmt den Erfolg und die Stärke des Deckmantels.<br>
+					<br>
 					Um den Deckmantel zu lüften muss der feindliche Netrunner nun die gewürfelte Stärke des Deckmantels übertreffen.<br>
-					<b>Würfel</b>: Interface + 1W10 gegen die Stärke des Deckmantels.<br><br>
+					<br>
+					<b>Probe</b>: Interface + 1W10 gegen die Stärke des Deckmantels.<br><br>
 					</center>
 				</div>
 			</details>
-		
-			◽ Kontrolle - Zugriff und Kntrolle über eine App oder ein Gerät übernehmen und dieses steuern.<br>
-			◽ Auswertung - Einen Datensatz analysieren oder den Verwendungszweck einer App.<br>
-			◽ Kundschafter - Nicht verschlüsselte oder gesperrte Architektur einsehen und deren Inhalt überblicken.<br>
-			◽ Abgang - Flucht aus einem Kampf.<br>
-			◽ Virus - Ein eigenes Programm einschleusen um eine Architektur zu übernehmen/infizieren.<br>
-			◽ Schocker - Angriff gegen einen anderen Netrunner oder ein Programm.<br>
-		
-			<br><br><br><br>
 			
-			<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
-			<div class="transparent-box" style="width:80%">
-				<center>
-						Dein Interface + Programm-ANG + 1W10<br>
-						oder ICE-ANG + 1W10<br>
-						<br>
-						gegen
-						<br>
-						Interface des Ziels + 1W10<br>
-						oder Programm-VER/ICE-VER + 1W10
-				</center>
-			</div>
+			<details><summary> Kontrolle - Zugriff und Kntrolle über eine App oder ein Gerät übernehmen und dieses steuern.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Hiermit kannst du Geräte kontrollieren, die über Kontrollknoten angeschlossen sind.<br>
+					Jeder Kontrollknoten weist ein SG auf, dass es mit einer eigenen NET-Aktion zu überbieten gilt.<br>
+					Solange du die Kontrolle über einen Knotenpunkt hast, kannst du alle angeschlossenen Geräte mit einer NET-Aktion steuern.<br>
+					Der SG um die Kontrolle von einem Netrunner oder Programm zurück zu holen entspricht dem Ergebnis der Würfelprobe, mit der der Kontrollpunkt zuvor eingenommen wurde.<br>
+					<br>
+					Kontrollknoten mit SG 10 wird mit einem Probenwert von 12 eingenommen.<br>
+					Ein gegnerischer Netrunner will den Kontrollknoten zurückholen, dieser muss nun eine Probe auf SG 12 überbieten.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Auswertung - Einen Datensatz analysieren oder den Verwendungszweck einer App.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Mit einer NET-Aktion kann der Wert eines Datensatzes bestimmt oder dessen grober Inhalt festgestellt werden.<br>
+					Es muss dafür keine Probe gemacht werden, besonders große oder unstrukturierte Dateien können jedoch einen SG haben.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Kundschafter - Nicht verschlüsselte oder gesperrte Architektur einsehen und deren Inhalt überblicken.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Mit einer NET-Aktion kann die Struktur eines Decks oder einer Architektur ausgekundschaftet werden.<br>
+					Du erhältst allgemeine Informationen über das System in dem du dich befindest. Zum Beispiel wie viele Stockwerke oder Programme enthält die Struktur.<br>
+					Wie viele Informationen du erhältst bestimmt die SL und kann anhand der gewürfelten Probe festgelegt werden.<br>
+					Dies betrifft jedoch nur unverschlüsselte Bereiche, verschlüsselte Bereiche können nur aufgedeckt aber nicht erkundet werden.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Abgang - Flucht aus einem Kampf.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Du versuchst mit einer NET-Aktion aus einem Kampf gegen schwarzes ICE zu fliehen.<br>
+					Du kannst nur aus einem aktiven Kampf fliehen. Dabei verlässt du die Architektur nicht, du fliehst nur auf ein anderes Stockwerk. Dabei kannst du keine Sicherheitsmaßnahmen umgehen.<br>
+					<br>
+					Probe: Dein Interface + 1W10 gegen Wahrnehmung + 1W10 des Programmes.<br>
+					<br>
+					Abgang kann nur einmal pro Zug genutzt werden. Scheitert die Probe, bleibt der Netrunner im Kampfgeschehen.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Virus - Ein eigenes Programm einschleusen um eine Architektur zu übernehmen/infizieren.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Im untersten/letzten Stockwerk einer Architektur kannst du einen Virus einschleusen. Dieser kann bis zu 2 Handlungen oder Veränderungen am System durchführen. Diese Änderungen 
+					bleiben im System bestehen, auch wenn der Netrunner sich ausklinkt, bis der Virus beseitigt oder das System neu aufgesetzt wurde.<br>
+					Für diese Handlung können mehrere NET-Aktionen und eine SG nötig sein. Die anzahl der Aktionen und die Höhe der SG richtet sich je nach Anforderung des Viruses und wird von der SL bestimmt.<br>
+					<br>
+					Scheitert der Versuch, wird der Virus einfach nicht funktionieren. Der Netrunner kann es jedoch erneut versuchen.<br>
+					Um ein Virus zu löschen muss die SG übertroffen werden, die dem Ergebnis der Würfelprobe entspricht, mit der der Virus installiert wurde.<br>
+					<br>
+					Beispiel: Netrunner A würfelt eine 14 auf eine SG Probe gegen 12 und installiert einen Virus.<br>
+					Netrunner B will den Virus löschen und muss nun eine SG von 14 übertreffen.
+					</center>
+				</div>
+			</details>
+			
+			<details><summary> Schocker - Angriff gegen einen anderen Netrunner oder ein Programm.</summary> <!-- Überschrift des Eintrages -->
+				<!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+				<div class="transparent-box" style="width:80%">
+					<center>
+					Mit einer NET-Aktion kannst du einen Angriff gegen eine Person oder ein Programm ausführen.<br>
+					<br>
+					Probe: Dein Interface + 1W10 gegen gegnerischer Netrunner Interface + 1W10.<br>
+					Probe: Dein Interface + 1W10 gegen gegnerisches Programm Verteidigung + 1W10.<br>
+					<br>
+					Wenn die Probe gelingt wird ein Schaden von 1W6 am Hirn des gegnerischen Netrunners oder an der Integrität des gegnerischen Programmes angerichtet.
+					</center>
+				</div>
+			</details>
+			<br><br>
 		</div>
 	</body>
 </html>
