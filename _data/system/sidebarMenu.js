@@ -9,6 +9,7 @@ class SidebarMenu extends HTMLElement {
 			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
 			<a href="sheet.html">Charakterbogen</a>
 			<a href="combat.html">Kampfsystem</a>
+			<a href="skills.html">Fertigkeiten</a>
 			<hr>
 			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
 			<a href="cyberdeck.html">Cyberdeck</a>

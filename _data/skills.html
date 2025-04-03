@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Im "system" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+        <link rel="stylesheet" href="system/styles.css">
+    </head>
+
+
+    <body>
+        <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "system/sidebarMenu.js". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+        <div class="sidebar">
+            <sidebar-menu></sidebar-menu>
+            <script src="system/sidebarMenu.js"></script>
+        </div>
+
+
+
+        <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+        <div class="main">
+            <!-- "br" ist ein Umschlag oder Absatz. Dies kann genutzt werden um Abst�nde zu erzeugen. -->
+            <br>
+            <center>
+
+                <!-- <h1> erzeugt eine Überschrift, größerer Text und einen zeilenumbruch. Größte Größe ist h1 und wird immer kleiner bis h6. -->
+                <h1>Fertigkeitsprobe</h1>
+                <!-- Mit id="colorTheme-1" wird das Farbschema 1 aus der styles.css geladen und der Text gefärbt. Diese Funktion entfernt den Zeilenumbruch bei Überschiften oder <p>! -->
+                <p id="colorTheme-1">ATT + Fertigkeit + 1W10</p> gegen <p id="colorTheme-2">ATT + Fertigkeit + 1W10</p> des Verteidigers ( Der Verteidiger muss überboten werden. )<br>
+                <p id="colorTheme-1">ATT + Fertigkeit + 1W10</p> gegen <p id="colorTheme-2">Schwierigkeitsgrad</p> (SG) ( SG muss übertroffen werden. )<br>
+
+                <br><br><hr><br><br>
+
+                <h1>Schwierigkeitsstufen bei Fertigkeiten</h1>
+                <!-- Beginn der Tabelle mit den Schwierigkeiten. -->
+                <table id="myTable" style="width:35%">
+                    <tr class="header">
+                        <th><center>SG</center></th>
+                        <th><center>Beschreibung</center></th>
+                    </tr>
+                    <!-- Um weitere Kontakte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+                    <tr>
+                        <!-- SG -->
+                        <td><center>9</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Einfach</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>13</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Alltäglich</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>15</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Schwierig</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>17</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Kompetent</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>21</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Heldenhaft</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>24</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Unglaublich</center></td>
+                    </tr>
+                    <tr>
+                        <!-- SG -->
+                        <td><center>29</center></td>
+                        <!-- Beschreibung -->
+                        <td><center>Legendär</center></td>
+                    </tr>
+                </table>
+            </center>
+
+            <br><br>
+
+            <center>
+                <h1>Kritischer Erfolg</h1>
+                Bei einem W10 Wurf auf eine natürliche 10 gewürfelt: würfel erneut und addiere das zweite Ergebnis zu deinem Wurf hinzu.
+
+                <h1>Kritischer Misserfolg</h1>
+                Bei einem W10 Wurf auf eine natürliche 1 gewürfelt: würfel erneut und ziehe das zweite Ergebnis von deinem Wurf ab.
+            </center>
+
+            <br><br><hr><br><br>
+
+            <h1>Positive und Negative Modifikatoren bei Würfelproben</h1>
+            Situationen und Äußere Umstände können einen Wurf zusätzlich erleischtern oder erschweren. Diese werden Modifikatoren genannt.<br>
+
+            <h1>Negative Modifikatoren</h1>
+            <!-- Beginn der Tabelle mit den Modifikatoren. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th><center>SG</center></th>
+                    <th><center>Beschreibung</center></th>
+                </tr>
+                <!-- Um weitere Kontakte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+                <tr>
+                    <!-- SG -->
+                    <td><center>-1</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Nacht oder schwache Beleuchtung</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-1</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Noch nie gemacht</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-2</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Komplexe Handlung</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-2</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Nicht die richtigen Werkzeuge oder Teile</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-2</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Letzte Nacht schlecht geschlafen</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-2</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Unter extremen Stress</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-4</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Erschöpft oder müde</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-4</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Betrunken, betäubt oder berauscht</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-4</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Versuch der heimlichen Durchführung</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>-4</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Schlechte Sicht durch Rauch/Dunkelheit</center></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <h1>Positive Modifikatoren</h1>
+            <!-- Beginn der Tabelle mit den Modifikatoren. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th><center>SG</center></th>
+                    <th><center>Beschreibung</center></th>
+                </tr>
+                <!-- Um weitere Kontakte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+                <tr>
+                    <!-- SG -->
+                    <td><center>+1</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Ergänzende Fertigkeitshandlung</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>+1</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Sich Zeit lassen</center></td>
+                </tr>
+                <tr>
+                    <!-- SG -->
+                    <td><center>+?</center></td>
+                    <!-- Beschreibung -->
+                    <td><center>Auf dein Glück verlassen</center></td>
+                </tr>
+            </table>
+
+            <br><br><hr><br><br>
+
+            <!-- Mit id="colorTheme-1" wird das Farbschema 1 aus der styles.css geladen und der Text gefärbt. Diese Funktion entfernt den Zeilenumbruch bei Überschiften oder <p>! -->
+            <h3 id="colorTheme-1">Fertigkeit erneut versuchen</h3><br>
+            Nur möglich wenn sich die Umstände verbessert haben.
+
+            <br><br><br>
+
+            <h3 id="colorTheme-2">Ergänzende Fertigkeitsprobe</h3><br>
+            Ein gutes Ergebnis bei einer Fertigkeitsprobe kann bei einer Folgehandlung ( Die sinnvoll mit der ersten Probe in Verbindung steht und auch von einem anderen Charakter 
+            ausgeführt werden kann. ) einen positiven Modifikator erhalten.
+
+            <br><br><br>
+
+            <h3 id="colorTheme-1">Ohne passende Fertigkeit</h3><br>
+            Du kannst auch eine Fertigkeitsprobe allein mit deinem ATT Wert ablegen.
+
+            <br><br><br>
+
+            <h3 id="colorTheme-2">Auf dein Glück verlassen</h3><br>
+            Du kannst deine Glückspunkte verwenden um positive Modifikatoren zu einer Würfelprobe hinzuzufügen. Diese Handlung muss jedoch vor dem Wurf angesagt werden.
+
+        </div>
+    </body>
+</html>

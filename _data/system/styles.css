@@ -1,4 +1,4 @@
-/* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
+﻿/* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
 body {
 	font-family: "Arial", sans-serif;
 	background-color: black;
@@ -32,6 +32,14 @@ body {
 @media screen and (max-height: 450px) {
 	.sidebar {padding-top: 15px;}
 	.sidebar a {font-size: 18px;}
+}
+#colorTheme-1 {
+	display: inline;
+	color:#d169c5;
+}
+#colorTheme-2 {
+	display: inline;
+	color: #19b396;
 }
 
 /* Hier folgen sytles für bestimmte functionen, am besten nicht ändern. */
