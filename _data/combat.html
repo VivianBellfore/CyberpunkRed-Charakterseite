@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	
+	<body>
+		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+		<div class="sidebar">
+			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
+			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<!-- Mit "../" navigieren wir in der Ordnerstruktur eine Ebene nach Oben, da diese html nicht im Ordner "_data" liegt. -->
+			<a href="../Charakterblatt.html">Übersicht</a>
+			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
+			<hr>
+			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="sheet.html">Charakterbogen</a>
+			<a style="background-color:black; color:#818181" href="combat.html">Kampfsystem</a>
+			<hr>
+			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="cyberdeck.html">Cyberdeck</a>
+			<a href="cyberware.html">Cyberware</a>
+			<a href="inventory.html">Inventar</a>
+			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
+			<a href="contacts.html">Kontakte</a>
+			<a href="locations.html">Ortschaften</a>
+			<a href="diary.html">Tagebuch</a>
+			<a href="shelter.html">Unterkunft</a>
+			<hr>
+			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen. -->
+			<a href="netrunner.html">Netrunner</a>
+			<a href="meditech.html">MediTech</a>
+		</div>
+		
+		
+		
+		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+		<div class="main">
+			<!-- <br> ist ein Umschlag oder Absatz. Dies kann genutzt werden um Abstände zu erzeugen. -->
+			<br>
+			<!-- Setzt alle dargestellten Sachen mittig auf die Seite. -->
+			<center>
+			<!-- <h1> erzeugt eine Überschrift, größerer Text und einen zeilenumbruch. Größte Größe ist h1 und wird immer kleiner bis h6. -->
+			<h1>Einheiten und Maßangaben</h1>
+			
+			<!-- Beginn der Tabelle mit den Einheiten. -->
+			<table id="myTable">
+				<tr class="header">
+					<th>Begriff</th>
+					<th>Erklärung</th>
+				</tr>
+				<!-- Um weitere Einheiten einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+				<!-- <tr> erzeugt eine Reihe in der Tabelle und <td> erzeugt eine Spalte. -->
+				<tr>
+					<!-- Der Begriff -->
+					<td>Standart Reichweite</td>
+					<!-- Die Erklärung -->
+					<td>2 Meter für reguläre Interaktionen und Aktionen ohne besondere Angaben.</td>
+				</tr>
+				<tr>
+					<td>Feld/Felder</td>
+					<td>Ein Feld ist eine Längenangabe die sich auf das Spielfeld bezieht und meint i.d.R. 2 Meter.</td>
+				</tr>
+				<tr>
+					<td>Gehen</td>
+					<td>Ungefähr 4 km/h schnell.</td>
+				</tr>
+				<tr>
+					<td>Rennen</td>
+					<td>Ungefähr 11 km/h schnell.</td>
+				</tr>
+				<tr>
+					<td>Zug Dauer</td>
+					<td>Ungefähr 3 Sekunden.</td>
+				</tr>
+			</table>
+			
+			<br><br>
+			
+			<h1>Kampfhandlungen</h1>
+			Ein Kampf besteht aus mehreren <b>Kampfrunden</b>, es können diverse Kampfparteien daran teilnehmen und er ist beendet, wenn nur noch Teilnehmer einer Kampfpartei übrig sind.<br>
+			In einer Kampfrunde dürfen alle Kampfteilnehmer ihren Zug nacheinander, sortiert nach der <b>Zugreihenfolge</b> ( Initiative ), ausführen.<br>
+			In einem Zug darf ein Kampfteilnehmer eine Aktion und eine Bewegung ausführen. Netrunner können entwerder eine Fleischaktion oder NET-Aktionen und eine Bewegung ausführen.
+			
+			<br><br>
+			
+			<!-- <b> lässt den darin definierten Text fett darstellen. -->
+			<b>Initiative auswürfeln</b>: REF + 1W10<br>
+			<b>Dein Zug</b>: 1 Aktion + 1 Bewegung
+			</center>
+			
+			<br><br>
+			
+			<h1>Aktionen</h1>
+			<!-- <ul> erzeugt eine unsortierte Liste. Mit <li> ertsellt man einen Eintrag in der Liste. -->
+			<ul>				
+				<li>Angreifen</li>
+				<li>Einsteigen/Aussteigen</li>
+				<li>Aufstehen</li>
+				<li>Hinlegen/Hinhocken/Hinknien</li>
+				<li>Packen</li>
+				<li>Ausharren/Warten</li>
+				<li>Zusätzliche Bewegungsaktion</li>
+				<li>Stabilisieren (Charakter medizinisch versorgen)</li>
+				<li>Fahrzeug starten</li>
+				<li>Werfen</li>
+				<li>NET-Aktionen statt Fleischaktion ausführen</li>
+				<li>Fertigkeit einsetzen</li>
+				<li>Gegenstand benutzen</li>
+				<li>Nachladen</li>
+				<li>Waffe wechseln</li>
+				<li>Waffe weg stecken ( Waffe fallen lassen kostet keine Aktion. )</li>
+				<li>Schwer zugängliche Waffe ziehen. ( Leicht zugängliche Waffe kostet keine Aktion. )</li>
+				<li>Menschlicher Schild</li>
+				<li>Würgen</li>
+				<li>Schild ausrüsten/fallen lassen</li>
+				<li>Fahrzeugmanöver</li>
+			</ul>
+			
+			<br>
+			
+			<h1>Bewegung</h1>
+			<ul>
+				<li>Narrative Bewegung ( Nur Beschreibung, kein Würfelwert. )</li>
+				<li>Relative Bewegung ( Vergleichswerte zweier Bewegungsgeschwindigkeiten. )</li>
+				<li>Absolute Bewegung ( Bewegungsaktion im Kampf: BEW * 2 Meter oder BEW * 1 Feld )</li>
+				<li>Liegen: Wenn der Charakter liegt, muss er erst eine Aktion zum aufstehen nutzen, bevor er sich bewegen kann.</li>
+			</ul>
+			
+			<br><br><hr><br><br>
+			
+			<center>
+			
+			<h1>Fernkampf</h1>
+			REF + Fertigkeit + 1W10 des Angreifers gegen GES + Fertigkeit + 1W10 des Verteidigers.<br>
+			oder<br>
+			REF + Fertigkeit + 1W10 des Angreifers gegen eine SG ( bestimmt durch "SG nach Reichweite" und der genutzten Waffe ).<br>
+			<br>
+			Ein Verteidiger mit einem REF 8 oder höher kann versuchen auszuweichen.<br>
+			Die SG oder die Probe des Verteidigers muss übertroffen werden, ansonsten trifft der Angreifer nicht.
+			
+			<br><br><br>
+			
+			<h1>Nahkampf</h1>
+			GES + Fertigkeit + 1W10 des Angreifers gegen GES + Ausweichen + 1W10 des Verteidigers.<br>
+			<br>
+			Die SG oder die Probe des Verteidigers muss übertroffen werden, ansonsten trifft der Angreifer nicht.
+			
+			</center>
+			
+			<br><br><hr><br><br>
+			
+			<h1>Mehrere Waffen führen</h1>
+			<h6>( AF2 = Angrifsfolge-2 )</h6>
+			<ul>
+				<li>Als Teil einer Aktion kannst du nie mehr als zwei Angrifsproben ablegen.</li>
+				<li>Du kannst nicht mit der selben Aktion mit zwei AF1-Waffen angreifen, auch nicht wenn du sie zweihändig führst. Eine AF1 Waffe verbraucht immer die vollständige Aktion.</li>
+				<li>Du kannst zwei Angriffe ausführen, wenn du eine oder zwei AF2 Waffen in den Händen hast. Entweder greifst du mit jeder Waffe einmal an oder mit einer Waffe zwei mal.</li>
+			</ul>
+			
+			<br>
+			
+			<h1>Gezielte Schüsse</h1>
+			Gehen nur mit AF1 Waffen und müssen vor dem Schuss angesagt werden. Der Angriff erhält dadurch einen negativen Modifikator von -8.<br>
+			Wähle eine Trefferzone:<br>
+			<ul>
+				<li>Kopf: Verdoppelt den Schaden, der die Kopfpanzerung deines Zieles durchschlägt.</li>
+				<li>Gehaltener Gegenstand: Wenn auch nur ein Schadenspunkt die Körperpanzerung deines Ziels durchschlägt, lässt es einen gehaltenen Gegenstand deiner Wahl fallen.</li>
+				<li>Bein: Wenn auch nur ein Schadenspunkt die Körperpanzerung deines Ziels durchschlägt, erleidet es zusätzlich die kritische Verletzung Begrochenes Bein.</li>
+			</ul>
+			
+			<br>
+						
+			<h1>Einzelschuss-SG</h1>
+			<!-- Beginn der Tabelle mit den Reichweiten für Einzelschuss. -->
+			<table id="myTable">
+				<tr class="header">
+					<th><center>Waffentyp</center></th>
+					<th><center>0-6 m</center></th>
+					<th><center>7-12 m</center></th>
+					<th><center>13-25 m</center></th>
+					<th><center>26-50 m</center></th>
+					<th><center>51-100 m</center></th>
+					<th><center>101-200 m</center></th>
+					<th><center>201-400 m</center></th>
+					<th><center>401-800 m</center></th>
+				</tr>
+				<!-- Um weitere Einträge einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+				<!-- <tr> erzeugt eine Reihe in der Tabelle und <td> erzeugt eine Spalte. -->
+				<tr>
+					<!-- Waffentyp -->
+					<td><center>Pistole</center></td>
+					<td><center>13</center></td>
+					<td><center>15</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+					<td><center>30</center></td>
+					<td><center>-</center></td>
+					<td><center>-</center></td>
+				</tr>
+				<tr>
+					<td><center>MP</center></td>
+					<td><center>15</center></td>
+					<td><center>13</center></td>
+					<td><center>15</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+					<td><center>-</center></td>
+				</tr>
+				<tr>
+					<td><center>Schrotflinte</center></td>
+					<td><center>13</center></td>
+					<td><center>15</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+					<td><center>35</center></td>
+					<td><center>-</center></td>
+					<td><center>-</center></td>
+				</tr>
+				<tr>
+					<td><center>Sturmgewehr</center></td>
+					<td><center>17</center></td>
+					<td><center>16</center></td>
+					<td><center>15</center></td>
+					<td><center>13</center></td>
+					<td><center>15</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+				</tr>
+				<tr>
+					<td><center>Scharfschützengewehr</center></td>
+					<td><center>30</center></td>
+					<td><center>25</center></td>
+					<td><center>25</center></td>
+					<td><center>20</center></td>
+					<td><center>15</center></td>
+					<td><center>16</center></td>
+					<td><center>17</center></td>
+					<td><center>20</center></td>
+				</tr>
+				<tr>
+					<td><center>Bogen & Armbrust</center></td>
+					<td><center>15</center></td>
+					<td><center>13</center></td>
+					<td><center>15</center></td>
+					<td><center>17</center></td>
+					<td><center>20</center></td>
+					<td><center>22</center></td>
+					<td><center>-</center></td>
+					<td><center>-</center></td>
+				</tr>
+				<tr>
+					<td><center>Granatenwerfer</center></td>
+					<td><center>16</center></td>
+					<td><center>15</center></td>
+					<td><center>15</center></td>
+					<td><center>17</center></td>
+					<td><center>20</center></td>
+					<td><center>22</center></td>
+					<td><center>25</center></td>
+					<td><center>-</center></td>
+				</tr>
+				<tr>
+					<td><center>Raketenwerfer</center></td>
+					<td><center>17</center></td>
+					<td><center>16</center></td>
+					<td><center>15</center></td>
+					<td><center>15</center></td>
+					<td><center>20</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+				</tr>
+			</table>
+			
+			<br>
+			
+			<h1>Automatisches Feuer</h1>
+			<ul>
+				<li>Kostet eine Aktion und 10 Geschosse. Wenn keine 10 Geschosse übrig sind, kann man nicht angreifen.</li>
+				<li>Mit automatischem Feuer kann kein gezielter Schuss abgegeben werden.</li>
+				<li>Als Fertigkeit wird automatisches Feuer statt dem Waffentyp ausgewählt.</li>
+				<li>Es wird nicht die Fernkampftabelle verwendet sondern die für automatisches Feuer.</li>
+				<li>Ziele mit REF 8 und höher können ausweichen.</li>
+				<li>Schaden: 2W6 * ( Zahl mit der du den SG übertroffen hast ) ( Wenn beide Würfen 6 zeigen, erleidet das Ziel eine kritische Verletzung. )</li>
+			</ul>
+			
+			<!-- Beginn der Tabelle mit den Reichweiten für automatisches Feuer -->
+			<table id="myTable">
+				<tr class="header">
+					<th><center>Waffentyp</center></th>
+					<th><center>0-6 m</center></th>
+					<th><center>7-12 m</center></th>
+					<th><center>13-25 m</center></th>
+					<th><center>26-50 m</center></th>
+					<th><center>51-100 m</center></th>
+				</tr>
+				<!-- Um weitere Einträge einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+				<!-- <tr> erzeugt eine Reihe in der Tabelle und <td> erzeugt eine Spalte. -->
+				<tr>
+					<td><center>MP</center></td>
+					<td><center>20</center></td>
+					<td><center>17</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+					<td><center>30</center></td>
+				</tr>
+				<tr>
+					<td><center>Sturmgewehr</center></td>
+					<td><center>22</center></td>
+					<td><center>20</center></td>
+					<td><center>17</center></td>
+					<td><center>20</center></td>
+					<td><center>25</center></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
