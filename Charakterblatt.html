@@ -4,35 +4,15 @@
 		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. --> 
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
-		<link rel="stylesheet" href="_data/styles.css">
+		<link rel="stylesheet" href="_data/system/styles.css">
 	</head>
 	
 	
 	<body>
 		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
 		<div class="sidebar">
-			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "_data" ab und ändere hier den Dateinamen und den Typ. -->
-			<img src="_data/images/cyberpunk-logo.png" width="240" height="100">
-			<!-- Wir markieren die Seite auf der wir uns befinden mit einem anderen Hintergrund. -->
-			<a style="background-color:black; color:#818181" href="Charakterblatt.html">Übersicht</a>
-			<!-- "hr" ist ein optischer Trennbalken der in "styles.css" definiert ist. -->
-			<hr>
-			<!-- Hier listen wir Seiten auf, die mit dem Charakterblatt und dem Würfeln zu tun haben. Die Seiten müssen im Ordner "_data" liegen und das "_data/" gehört hier zwingend vor den Dateinamen dazu. -->
-			<a href="_data/sheet.html">Charakterbogen</a>
-			<a href="_data/combat.html">Kampfsystem</a>
-			<hr>
-			<!-- Hier listen wir Seiten mit Hintergrundinformationen und der Ausrüstung des Charakters auf. Die Seiten müssen im Ordner "_data" liegen und das "_data/" gehört hier zwingend vor den Dateinamen dazu. -->
-			<a href="_data/cyberdeck.html">Cyberdeck</a>
-			<a href="_data/cyberware.html">Cyberware</a>
-			<a href="_data/inventory.html">Inventar</a>
-			<a href="_data/contacts.html">Kontakte</a>
-			<a href="_data/locations.html">Ortschaften</a>
-			<a href="_data/diary.html">Tagebuch</a>
-			<a href="_data/shelter.html">Unterkunft</a>
-			<hr>
-			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "_data" liegen und das "_data/" gehört hier zwingend vor den Dateinamen dazu. -->
-			<a href="_data/netrunner.html">Netrunner</a>
-			<a href="_data/meditech.html">MediTech</a>
+			<sidebar-menu></sidebar-menu>		
+			<script src="_data/system/sidebarMenu.js"></script>
 		</div>
 		
 		
