@@ -1,4 +1,6 @@
-﻿/* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
+﻿/* Color theme pink-turquoise: #d169c5, #19b396 */
+
+/* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
 body {
 	font-family: "Arial", sans-serif;
 	background-color: black;
@@ -14,6 +16,7 @@ body {
 	background: linear-gradient(black 0%, #d169c5 10%, #19b396 90%, black 100%);
 	overflow-x: hidden;
 	padding-top: 50px;
+	box-shadow: 3px 3px 5px black, 3px 3px 5px #19b396;
 }
 .sidebar a {
 	padding: 6px 8px 6px 16px;
@@ -33,6 +36,8 @@ body {
 	.sidebar {padding-top: 15px;}
 	.sidebar a {font-size: 18px;}
 }
+
+/* Schriftfarben dem Farbschema des jweiligen Styles. Können in Funktionen wie <h1> oder <p> aufgerufen werden: <h1 id="colorTheme-1"> */
 #colorTheme-1 {
 	display: inline;
 	color:#d169c5;
@@ -57,18 +62,25 @@ hr {
 
 /* Hier wird eine standart Tabelle formatiert. Eine Änderung hier wird fast alle Tabellen betreffen. */
 #myTable {
-	font-family: arial, sans-serif;
+	width: 80%;
 	border-collapse: collapse;
-	width: 100%;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
 }
 #myTable th, #myTable td {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+#myTable tr:last-child td {
+	border-bottom: none;
 }
 #myTable tr :nth-child(even) {
-	background-color: #2e2d2e;
+	background: rgba(255, 255, 255, 0.2);
 }
+
+
 #myInput {
 	background-position: 10px 10px;
 	background-repeat: no-repeat;
