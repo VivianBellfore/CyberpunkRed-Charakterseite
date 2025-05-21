@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
-		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
-		<link rel="stylesheet" href="system/styles.css">
-	</head>
+<head>
+	<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+	<link rel="stylesheet" href="system/styles.css">
+	<link rel="stylesheet" href="system/diaryStyle.css">
+</head>
 	
 	
 	<body>
@@ -20,24 +21,80 @@
 		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
 		<div class="main">
 			<br>
-			<h1>Erledigte Aufträge</h1>
-			<br>
-			
-			<!-- Um weitere Tagebucheinträge einzutragen, kopiere einfach die erste Box hier drunter von <details> bis </details> und ändere die Eintragungen. -->
-			<details><summary>Erste Solorunde</summary> <!-- Überschrift des Eintrages -->
-				<div class="transparent-box" style="width:80%"><center>
-				<!-- Der Tagebucheintrag. Das "<br>" beendet den Text und macht einen Absatz. -->
-				Hier kommt dein Tagebucheintrag hinein.
-				
-				<br><hr><br>
-				
-				<!-- Hier habe ich wichtige Stichpunkte aufgelistet, dies kann natürlich auch weg gelassen werden. Das "<b>" macht Text fett dargestellt. Das "<br>" macht einen neuen Absatz im Text.-->
-				<font color="#2b753f">
-				<b>+ 5000€$</b> <br>
-				<br></font>
-				<font color="#b3453b">
-				<b>- 20 Schuss</b> 		
-			</font></div></center></details>
+
+			<!-- Hier wird die Klasse `diary` eröffnet die ihre styles aus der `diaryStyle.css` bezieht. -->
+			<div class="diary">
+				<h1>Tagebucheinträge</h1>
+				<br>
+
+				<!-- Hier wird die Klasse `olcards` eröffnet die ihre styles aus der `diaryStyle.css` bezieht. -->
+				<ol class="olcards">
+
+					<!-- Diese Variable übergibt eine Farbe an das `diaryStyle.css` der `olcards`. Hier wird die globale Farbe 1 von `styles.css` verwendet. -->
+					<li style="--cardColor:var(--color1)">
+						<div class="content">
+							<!-- Um weitere Tagebucheinträge einzutragen, kopiere einfach die erste Box hier drunter von <details> bis </details> und ändere die Eintragungen. -->
+							<details>
+								<summary>Erste Solorunde</summary> <!-- Überschrift des Eintrages -->
+								<br>
+								<div class="transparent-box" style="border:none">
+									<center>
+										<!-- Der Tagebucheintrag. Das "<br>" beendet den Text und macht einen Absatz. -->
+										Hier kommt dein Tagebucheintrag hinein. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem.
+
+										<br><br><hr><br>
+
+										<!-- Hier habe ich wichtige Stichpunkte aufgelistet, dies kann natürlich auch weg gelassen werden. Das "<b>" macht Text fett dargestellt. Das "<br>" macht einen neuen Absatz im Text.-->
+										<font color="#2b753f">
+											<!-- grün / Gewinn -->
+											<b>+ 500€$</b> <br>
+											<br>
+										</font>
+										<font color="#b3453b">
+											<!-- rot / Abzüge -->
+											<b>- 20 Schuss</b>
+										</font>
+								</div></center>
+							</details>
+						</div>
+					</li>
+
+					<!-- Diese Variable übergibt eine Farbe an das `diaryStyle.css` der `olcards`. Hier wird die globale Farbe 2 von `styles.css` verwendet. -->
+					<li style="--cardColor:var(--color2)">
+						<div class="content">
+							<!-- Um weitere Tagebucheinträge einzutragen, kopiere einfach die erste Box hier drunter von <details> bis </details> und ändere die Eintragungen. -->
+							<details>
+								<summary>Die Gruppe kennen lernen</summary> <!-- Überschrift des Eintrages -->
+								<br>
+								<div class="transparent-box" style="border:none">
+									<center>
+										<!-- Der Tagebucheintrag. Das "<br>" beendet den Text und macht einen Absatz. -->
+										Hier kommt dein Tagebucheintrag hinein. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem.
+
+										<br><br><hr><br>
+
+										<!-- Hier habe ich wichtige Stichpunkte aufgelistet, dies kann natürlich auch weg gelassen werden. Das "<b>" macht Text fett dargestellt. Das "<br>" macht einen neuen Absatz im Text.-->
+										<font color="#2b753f">
+											<!-- grün / Gewinn -->
+											<b>+ 500€$</b> <br>
+											<br>
+										</font>
+										<font color="#b3453b">
+											<!-- rot / Abzüge -->
+											<b>- 20 Schuss</b>
+										</font>
+								</div></center>
+							</details>
+						</div>
+					</li>
+
+				</ol>
+
+			</div>
+
 		</div>
+
 	</body>
 </html>
