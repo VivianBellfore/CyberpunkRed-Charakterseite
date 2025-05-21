@@ -1,70 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
-		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
-		<link rel="stylesheet" href="system/styles.css">
-	</head>
+<head>
+	<!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+	<link rel="stylesheet" href="system/styles.css">
+	<link rel="stylesheet" href="system/contactStyle.css">
+</head>
 	
 	
-	<body>
-		<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
-		<div class="sidebar">
-			<sidebar-menu></sidebar-menu>		
-			<script src="system/sidebarMenu.js"></script>
+<body>
+	<!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+	<div class="sidebar">
+		<sidebar-menu></sidebar-menu>
+		<script src="system/sidebarMenu.js"></script>
+	</div>
+
+
+
+	<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+	<div class="main">
+		<!-- Hier beginnt die Auflistung deiner Kotakte. Im style sheet `contactStyle.css` sind die styles für diese Klassen festgelegt. -->
+		<div class="content">
+			<br>
+			<ul>
+
+				<!-- Hier beginnt der erste Kontakt. -->
+				<li class="person job">
+					<!-- Die `thumb` Klasse ist das Profilbild der Person. Du kannst hier eine URL angeben oder den Pfad zu einem Bild in deinem `images` Ordner. -->
+					<div class="thumb"><img src="https://static.wikia.nocookie.net/cyberpunk/images/b/bc/Placide_profile.png/revision/latest?cb=20210106041847&path-prefix=pl"></div>
+					<!-- In der Klasse `description` steht der Informationstext der Person und du kannst mit `<tag> TEXT </tag>` einen Tag (farblich hinterlegtes Schlagwort) hinzufügen. -->
+					<div class="description">
+						<!-- Hier kommt der Name oder Spitzname der Person hinein. -->
+						<h3>Placide</h3>
+						<br>
+						<!-- Jetzt folgt der eigentliche Text. -->
+						Groß, schwarz, breit gebaut, schwarze Dreadlocks, braune Cyberaugen, Narben auf dem Brustkorb, trägt eher lockere Kleidung wie Jeans und Ledermäntel.<br>
+						<!-- Tags mit Schlagwörtern. Vergiss nicht ein Leerzeichen zwischen den Tags zu machen. -->
+						<tag>Fixer</tag> <tag>Agentkontakt</tag>
+					</div>
+				</li>
+				<!-- Hier drunter kannst du einen weiteren Kontakt hinzufügen. Kopiere von <li class="person job"> bis zu </li> und passe den Inhalt an. -->
+
+				<li class="person job">
+					<!-- Die `thumb` Klasse ist das Profilbild der Person. Du kannst hier eine URL angeben oder den Pfad zu einem Bild in deinem `images` Ordner. -->
+					<div class="thumb"><img src="https://static.wikia.nocookie.net/cyberpunk/images/b/bc/Placide_profile.png/revision/latest?cb=20210106041847&path-prefix=pl"></div>
+					<!-- In der Klasse `description` steht der Informationstext der Person und du kannst mit `<tag> TEXT </tag>` einen Tag (farblich hinterlegtes Schlagwort) hinzufügen. -->
+					<div class="description">
+						<!-- Hier kommt der Name oder Spitzname der Person hinein. -->
+						<h3>Placide 2</h3>
+						<br>
+						<!-- Jetzt folgt der eigentliche Text. -->
+						Groß, schwarz, breit gebaut, schwarze Dreadlocks, braune Cyberaugen, Narben auf dem Brustkorb, trägt eher lockere Kleidung wie Jeans und Ledermäntel.<br>
+						<!-- Tags mit Schlagwörtern. Vergiss nicht ein Leerzeichen zwischen den Tags zu machen. -->
+						<tag>Fixer</tag> <tag>Agentkontakt</tag>
+					</div>
+				</li>
+
+				<li class="person job">
+					<!-- Die `thumb` Klasse ist das Profilbild der Person. Du kannst hier eine URL angeben oder den Pfad zu einem Bild in deinem `images` Ordner. -->
+					<div class="thumb"><img src="https://static.wikia.nocookie.net/cyberpunk/images/b/bc/Placide_profile.png/revision/latest?cb=20210106041847&path-prefix=pl"></div>
+					<!-- In der Klasse `description` steht der Informationstext der Person und du kannst mit `<tag> TEXT </tag>` einen Tag (farblich hinterlegtes Schlagwort) hinzufügen. -->
+					<div class="description">
+						<!-- Hier kommt der Name oder Spitzname der Person hinein. -->
+						<h3>Placide 3</h3>
+						<br>
+						<!-- Jetzt folgt der eigentliche Text. -->
+						Groß, schwarz, breit gebaut, schwarze Dreadlocks, braune Cyberaugen, Narben auf dem Brustkorb, trägt eher lockere Kleidung wie Jeans und Ledermäntel.<br>
+						<!-- Tags mit Schlagwörtern. Vergiss nicht ein Leerzeichen zwischen den Tags zu machen. -->
+						<tag>Fixer</tag> <tag>Agentkontakt</tag>
+					</div>
+				</li>
+
+			</ul>
 		</div>
-		
-		
-		
-		<!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
-		<div class="main">
-		
-			<!-- Suchfilter Funktion. -->
-			<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Gib einen Namen ein..." title="Namenssuche">
-			<!-- Beginn der Tabelle mit den Kontakten. -->
-			<table id="myTable">
-			  <tr class="header">
-				<th>Name</th>
-				<th>Notiz</th>
-				<th>Kontakt</th>
-				<th>Beschreibung</th>
-			  </tr>
-			  <!-- Um weitere Kontakte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
-			  <tr>
-				<!-- Der Name. -->
-				<td>Placide</td>
-				<!-- Die Notiz. -->
-				<td>Chief Enforcer der Voodoo Boys.</td>
-				<!-- Kontaktnummer oder Art der Kontaktmöglichkeit -->
-				<td>Agent, Adresse</td>
-				<!-- Die Beschreibung. -->
-				<td>Groß, schwarz, breit gebaut, schwarze Dreadlocks, braune Cyberaugen, Narben auf dem Brustkorb, trägt eher lockere Kleidung wie Jeans und Ledermäntel.</td>
-			  </tr>
-			</table>
-			
-			<!-- Hier beginnt eine javascript Funktion. Es ist die Suchfunktion in der Kontaktliste. Nichts verändern wenn du kein javascript kannst :P -->
-			<script>
-			function searchFunction() {
-			  var input, filter, table, tr, td, i, txtValue;
-			  input = document.getElementById("myInput");
-			  filter = input.value.toUpperCase();
-			  table = document.getElementById("myTable");
-			  tr = table.getElementsByTagName("tr");
-			  for (i = 0; i < tr.length; i++) {
-				td = tr[i].getElementsByTagName("td")[0];
-				if (td) {
-				  txtValue = td.textContent || td.innerText;
-				  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					tr[i].style.display = "";
-				  } else {
-					tr[i].style.display = "none";
-				  }
-				}       
-			  }
-			}
-			</script>
-			
-		</div>
-	</body>
+	</div>
+</body>
 </html>

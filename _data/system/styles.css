@@ -46,6 +46,10 @@ body {
 	display: inline;
 	color: #19b396;
 }
+:root {
+	--color1: #d169c5;
+	--color2: #19b396;
+}
 
 /* Hier folgen sytles für bestimmte functionen, am besten nicht ändern. */
 hr { 
