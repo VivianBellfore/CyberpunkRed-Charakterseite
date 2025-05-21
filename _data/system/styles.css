@@ -1,4 +1,7 @@
-﻿/* Color theme pink-turquoise: #d169c5, #19b396 */
+﻿:root {
+	--color1: #d169c5; /* Color pink */
+	--color2: #19b396; /* Color turquoise */
+}
 
 /* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
 body {
@@ -13,10 +16,10 @@ body {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background: linear-gradient(black 0%, #d169c5 10%, #19b396 90%, black 100%);
+	background: linear-gradient(black 0%, var(--color1) 10%, var(--color2) 90%, black 100%);
 	overflow-x: hidden;
 	padding-top: 50px;
-	box-shadow: 3px 3px 5px black, 3px 3px 5px #19b396;
+	box-shadow: 3px 3px 5px black, 3px 3px 5px var(--color2);
 }
 .sidebar a {
 	padding: 6px 8px 6px 16px;
@@ -40,15 +43,11 @@ body {
 /* Schriftfarben dem Farbschema des jweiligen Styles. Können in Funktionen wie <h1> oder <p> aufgerufen werden: <h1 id="colorTheme-1"> */
 #colorTheme-1 {
 	display: inline;
-	color:#d169c5;
+	color: var(--color1);
 }
 #colorTheme-2 {
 	display: inline;
-	color: #19b396;
-}
-:root {
-	--color1: #d169c5;
-	--color2: #19b396;
+	color: var(--color2);
 }
 
 /* Hier folgen sytles für bestimmte functionen, am besten nicht ändern. */
@@ -83,8 +82,6 @@ hr {
 #myTable tr :nth-child(even) {
 	background: rgba(255, 255, 255, 0.2);
 }
-
-
 #myInput {
 	background-position: 10px 10px;
 	background-repeat: no-repeat;

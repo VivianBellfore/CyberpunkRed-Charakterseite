@@ -1,4 +1,7 @@
-﻿/* Color theme red: #FF1919, #420606 */
+﻿:root {
+    --color1: #FF1919; /* Color red */
+    --color2: #420606; /* Color dark red */
+}
 
 /* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
 body {
@@ -13,10 +16,10 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(black 0%, #FF1919 10%, #420606 90%, black 100%);
+    background: linear-gradient(black 0%, var(--color1) 10%, var(--color2) 90%, black 100%);
     overflow-x: hidden;
     padding-top: 50px;
-    box-shadow: 3px 3px 5px black, 3px 3px 5px #420606;
+    box-shadow: 3px 3px 5px black, 3px 3px 5px var(--color2);
 }
 .sidebar a {
     padding: 6px 8px 6px 16px;
@@ -33,22 +36,18 @@ body {
     padding: 0px 10px;
 }
 @media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-    .sidebar a {
-        font-size: 18px;
-    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }
 
 /* Schriftfarben dem Farbschema des jweiligen Styles. Können in Funktionen wie <h1> oder <p> aufgerufen werden: <h1 id="colorTheme-1"> */
 #colorTheme-1 {
     display: inline;
-    color: #FF1919;
+    color: var(--color1);
 }
 #colorTheme-2 {
     display: inline;
-    color: #420606;
+    color: var(--color2);
 }
 
 /* Hier folgen sytles für bestimmte functionen, am besten nicht ändern. */
@@ -108,4 +107,30 @@ hr {
 }
 #tableItems tr :nth-child(even) {
     background-color: #2e2d2e;
+}
+
+/* Hier wird der Style für [<ul class="">] Listen festgelegt. */
+ul.blank {
+    list-style-type: square;
+    list-style-position: inside;
+}
+ul.a {
+    list-style-type: square;
+    list-style-position: inside;
+    width: 40%;
+    border-collapse: collapse;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+ul.b {
+    list-style-type: square;
+    list-style-position: inside;
+    width: 60%;
+    border-collapse: collapse;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
