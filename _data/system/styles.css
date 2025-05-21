@@ -107,3 +107,29 @@ hr {
 #tableItems tr :nth-child(even) {
 	background-color: #2e2d2e;
 }
+
+/* Hier wird der Style für [<ul class="">] Listen festgelegt. */
+ul.blank {
+	list-style-type: square;
+	list-style-position: inside;
+}
+ul.a {
+	list-style-type: square;
+	list-style-position: inside;
+	width: 40%;
+	border-collapse: collapse;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+}
+ul.b {
+	list-style-type: square;
+	list-style-position: inside;
+	width: 60%;
+	border-collapse: collapse;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+}
