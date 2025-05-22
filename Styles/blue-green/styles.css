@@ -3,6 +3,13 @@
     --color2: #15ED76; /* Color lime */
 }
 
+.colorfade {
+    background: linear-gradient(to right, var(--color1), var(--color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 /* Die folgenden Einstellungen sind für das grundlegende Design der Seite. Diese betreffen die "main" und "sidebar" Klassen. */
 body {
     font-family: "Arial", sans-serif;
