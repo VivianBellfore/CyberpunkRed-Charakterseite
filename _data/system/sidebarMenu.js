@@ -23,6 +23,7 @@
 			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "jobs" liegen. -->
 			<a href="jobs/netrunner.html">Netrunner</a>
 			<a href="jobs/meditech.html">MediTech</a>
+			<a href="jobs/rockster.html">Rockster</a>
 		`
 	}
 }
@@ -56,6 +57,7 @@ class SidebarMenuJobs extends HTMLElement {
 			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "jobs" liegen. -->
 			<a href="netrunner.html">Netrunner</a>
 			<a href="meditech.html">MediTech</a>
+			<a href="rockster.html">Rockster</a>
 		`
 	}
 }

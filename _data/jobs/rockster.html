@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Charismatische Wirkung</h1>
+            Diese Rollenfähigkeit kann nur auf Fans angewendet werden.<br>
+            <p id="colorTheme-1">Charismatische Wirkung (Rollenlevel) + 1W10</p> gegen <p id="colorTheme-2">das SG der Fans</p>.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <br><br><br>
+
+            <!-- <h3> definiert eine Überschrift. -->
+            <h3>Schwierigkeitsstufen</h3>
+            <!-- Beginn der Tabelle mit den Schwierigkeitsstufen je nach Menge der Fans. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th>Ein Fan</th>
+                    <th>Kleine Gruppe</th>
+                    <th>Große Gruppe</th>
+                </tr>
+                <tr>
+                    <td><center>8</center></td>
+                    <td><center>10</center></td>
+                    <td><center>12</center></td>
+                </tr>
+            </table>
+
+            <br><br><br>
+
+            <h1>Auftrittsmöglichkeiten nach Rollenlevel</h1>
+            <!-- Beginn der Tabelle mit den Schwierigkeiten. -->
+            <table id="myTable" style="width:70%">
+                <tr class="header">
+                    <th><center>Rang</center></th>
+                    <th><center>Beschreibung</center></th>
+                </tr>
+                <!-- Um weitere Möglichkeiten einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+                <tr>
+                    <!-- Rang -->
+                    <td><center>1-2</center></td>
+                    <!-- Beschreibung -->
+                    <td>Kleine lokale Clubs</td>
+                </tr>
+                <tr>
+                    <!-- Rang -->
+                    <td><center>3-4</center></td>
+                    <!-- Beschreibung -->
+                    <td>Bekannte Clubs</td>
+                </tr>
+                <tr>
+                    <!-- Rang -->
+                    <td><center>5-6</center></td>
+                    <!-- Beschreibung -->
+                    <td>Große, bedeutende Clubs</td>
+                </tr>
+                <tr>
+                    <!-- Rang -->
+                    <td><center>7-8</center></td>
+                    <!-- Beschreibung -->
+                    <td>Kleine Konzerthallen. lokale Video-Ausstrahlung</td>
+                </tr>
+                <tr>
+                    <!-- Rang -->
+                    <td><center>9</center></td>
+                    <!-- Beschreibung -->
+                    <td>Große Konzerthallen, landesweite Video-Ausstrahlungen</td>
+                </tr>
+                <tr>
+                    <!-- Rang -->
+                    <td><center>10</center></td>
+                    <!-- Beschreibung -->
+                    <td>Große Stadien oder internationale Video-Ausstrahlungen</td>
+                </tr>
+            </table>
+
+        </center>
+    </div>
+</body>
+</html>
