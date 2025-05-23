@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Kampfsinn</h1>
+            Mit dieser Rollenfähigkeit kann ein Solo Punkte auf Kampffähigkeiten verteilen. Das Rollenlevel entspricht der Anzahl der vergebbaren Punkte.<br>
+            Die Punkte können jederzeit außerhalb eines Kampfes geändert werden. Im Kampf muss eine Aktion dafür aufgewendet werden.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <br><br><br>
+
+            <!-- <h3> definiert eine Überschrift. -->
+            <h3>Schaden abwenden</h3>
+            <!-- Beginn der Tabelle mit den Punktekosten. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th>2 Punkte</th>
+                    <th>4 Punkte</th>
+                    <th>6 Punkte</th>
+                    <th>8 Punkte</th>
+                    <th>10 Punkte</th>
+                </tr>
+                <tr>
+                    <td><center>Schaden -1</center></td>
+                    <td><center>Schaden -2</center></td>
+                    <td><center>Schaden -3</center></td>
+                    <td><center>Schaden -4</center></td>
+                    <td><center>Schaden -5</center></td>
+                </tr>
+            </table>
+
+            <br><br><br>
+
+            <h3>Patzer ausgleichen</h3>
+            Kostet 4 Punkte. Du negierst kritische Fehlschläg beim Würfeln, sie gelten nun nur noch als 1.
+
+            <br><br><br>
+
+            <h3>Reaktionsvermögen</h3>
+            Pro vergebenem Punkt +1 auf das Initiative-Ergebnis.
+
+            <br><br><br>
+
+            <h3>Genauer Angriff</h3>
+            <!-- Beginn der Tabelle mit den Punktekosten. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th>3 Punkte</th>
+                    <th>6 Punkte</th>
+                    <th>9 Punkte</th>
+                </tr>
+                <tr>
+                    <td><center>Angriffswurf +1</center></td>
+                    <td><center>Angriffswurf +2</center></td>
+                    <td><center>Angriffswurf +3</center></td>
+                </tr>
+            </table>
+
+            <br><br><br>
+
+            <h3>Schwachpunkt finden</h3>
+            Pro vergebenem Punkt +1 Schaden ( vor Abzug durch die Panzerung ).
+
+            <br><br><br>
+
+            <h3>Gefahr erkennen</h3>
+            Pro vergebenem Punkt +1 auf Wahrnehmungsproben.
+
+            <br><br><hr><br><br>
+
+            <h1>Ein Beispiel</h1>
+            Ein Solo Charakter hat das Rollenlevel 4.<br>
+            Er hat also 4 Punkte, die er frei vergeben kann.
+
+            <br><br><br>
+
+            Möglichkeit 1:<br>
+            Schadenabwenden 1 ( kostet 2 Punkte )<br>
+            Schwachpunkt erkennen 2 ( kostet 2 Punkte )
+
+            <br><br><br>
+
+            Möglichkeit 2:<br>
+            Reaktionsvermögen 1 ( kostet 1 Punkt )<br>
+            Genauer Angriff 1 ( kostet 3 Punkte )
+
+        </center>
+    </div>
+</body>
+</html>
