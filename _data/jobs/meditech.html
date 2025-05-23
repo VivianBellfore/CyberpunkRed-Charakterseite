@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "sidebarMenu.js". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Ein nützliches Bild mit Blutgruppentypen. Liegt in Ordner "images". -->
+        <img src="../images/Blutgruppen.png" width="40%">
+
+        <!-- <br> ist ein Umschlag oder Absatz. Dies kann genutzt werden um Abstände zu erzeugen. -->
+        <br><br>
+
+        <!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+        <div class="transparent-box" style="width:80%">
+            <!-- Innerhalb der Box soll alles mittig dargestellt werden. -->
+            <center>
+                <!-- Hier kannst du Gegenstandseffekte, Aktionshinweise oder Würfelproben eintragen die für deine Rolle speziell sind. -->
+                <!-- <h2> ist eine Formatierung für Überschriften die von der größten h1 bis zur kleinsten h6 reicht. -->
+                <h2>MediScanner</h2>
+                + 2 auf Erste Hilfe und Notfallmedizin durch das Gerät.
+                <br>
+
+                <!-- "hr" erzeugt einen Trennstrich, der in der styles.css Datei formatiert ist. -->
+                <br><hr><br>
+
+                <h2>Meditechnik</h2>
+                Die Fertigkeitsstufe ergibt sich aus Pharmazeutik + Cryosysteme.
+                <br>
+
+                <br><hr><br>
+
+                <h2>Lufthypo</h2>
+                Anwenden auf der Haut ( durch dünnen Stoff ) am Patienten kostet 1 Aktion.<br>
+                Unfreiwillige Gabe des Medikaments durch Nahkampfprobe möglich.<br>
+                Das Nachladen kostet keine Aktion.
+                <br>
+
+                <br><hr><br>
+
+                <h2>Cryopumpe</h2>
+                Kann nur von MediTech´s verwendet werden. Bis zu 1 Woche keine Traumaproben für die Person in Stasis.<br>
+                Der Cryopumpensack gilt als Deckung und hat 15 TP.
+                <br>
+
+                <br><hr><br>
+
+                <h2>Cryotank</h2>
+                Probe auf Meditechnik gegen SG 13 um eine Person in Stasis zu versetzen.<br>
+                Der Tank heilt das Ziel mit doppelter Geschwindigkeit. Der Tank gilt als Deckung mit 30 TP.
+                <br>
+
+                <br><hr><br>
+
+                <h2>Pharmazeutik synthetisieren</h2>
+                Probe auf Meditechnik gegen SG 13 um einen Stoff oder ein Medikament herzustellen. Die Herstellung dauert 1 Stunde.<br>
+                Materialkosten 200€$ erzeugen Dosen in Höhe deiner Meditechnikstufe. Material wird bei einem Fehlschlag verbraucht.
+                <br>
+
+            </center>
+        </div>
+
+        <br>
+        <h1>Patientenakten</h1>
+        <br>
+
+        <!-- Hier wird ein ausklappbares Feld für den ersten Patienten erzeugt. Um einen weiteren Patienten hinzuzufügen kopiere alles einschließlich von "<details>" bis einschließlich "</details>". -->
+        <details>
+            <!-- Hier beginnt die Tabelle für die grundlegenden Patientendaten. -->
+            <summary>Mano Ash</summary>
+
+            <!-- Hier wird ein Rahmen erzeugt in dem der folgende Text dargestellt wird. -->
+            <div class="transparent-box" style="width:80%">
+                <h3>Informationen</h3>
+
+                <!-- Beginn der Tabelle mit der Grunddaten des Patienten. -->
+                <table id="myTable">
+                    <tr class="header">
+                        <th>Geburtsjahr</th>	<!-- Das Geburtsjahr des Patienten. -->
+                        <th>Blutgruppe</th>     <!-- Die Blugruppe des Patienten. -->
+                        <th>Geschlecht</th>     <!-- Das biologische Geschlecht des Patienten. -->
+                        <th>Organspender</th>   <!-- Ist der Patient Organspender? -->
+                        <th>Allergien</th>      <!-- Hat der Patient Allergien? -->
+                        <th>Drogenkonsum</th>   <!-- Nimmt der Patient legale oder illegale Drogen zu sich. -->
+                        <th>Medikation</th>     <!-- Nimmt der Patient regelmäßig Medikamente ein? -->
+                    </tr>
+                    <!-- Um weitere Punkte einzutragen, kopiere einfach den ersten Table hier drunter von <tr> bis </tr> und ändere die Eintragungen. -->
+                    <tr>
+                        <td>2048</td> 		<!-- Das Geburtsjahr des Patienten. -->
+                        <td>0-</td> 		<!-- Die Blugruppe des Patienten. -->
+                        <td>männlich</td> 	<!-- Das biologische Geschlecht des Patienten. -->
+                        <td>Nein</td> 		<!-- Ist der Patient Organspender? -->
+                        <td>Zimt</td> 		<!-- Hat der Patient Allergien? -->
+                        <td>Nein</td> 		<!-- Nimmt der Patient legale oder illegale Drogen zu sich. -->
+                        <td>Nein</td> 		<!-- Nimmt der Patient regelmäßig Medikamente ein? -->
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <!-- Hier beginnt die Tabelle für die Cyberware des Patienten. -->
+                <h3>Cyberware</h3>
+
+                <!-- Beginn der Tabelle mit der Cyberware des Patienten. -->
+                <table id="myTable">
+                    <tr class="header">
+                        <th>Bezeichnung</th>	<!-- Die Bezeichnung der Cyberware -->
+                        <th>Qualität</th>       <!-- RP Beschreibung der Qualität. -->
+                        <th>Einbaudatum</th>    <!-- Einbau Jahr und oder Datum -->
+                    </tr>
+                    <!-- Um weitere Punkte einzutragen, kopiere einfach den ersten Tabelleneintrag hier drunter von einschließlich <tr> bis einschließlich </tr> und ändere die Eintragungen. -->
+                    <tr>
+                        <td>Cyberauge (r. l.)</td> 		<!-- Die Bezeichnung der Cyberware -->
+                        <td>Gebraucht gut Qualität</td> <!-- RP Beschreibung der Qualität. -->
+                        <td>2069</td> 					<!-- Einbau Jahr und oder Datum -->
+                    </tr>
+                </table>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
