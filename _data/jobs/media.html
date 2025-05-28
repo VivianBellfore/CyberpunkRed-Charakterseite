@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <!-- Hier laden wir die Navigation von der "sidebarMenu.js" javascript Datei. Und da wir uns auf einer Seite im jobs Unterordner befinden, laden wir die Funktion "sidebar-menu-jobs". -->
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Alles was sich zwischen <center> und </center> steht, wird zentriert und somit mittig auf der Webseite dargestellt. -->
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Glaubwürdigkeit</h1>
+            Die Rollenfähigkeit eines Medias ist seine Glaubwürdigkeit und diese bestimmt nicht nur ob Menschen seinen Äußerungen glauben, sondern auch, wie groß sein Publikum ist.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <!-- <hr> ist eine Trennlinie die in "styles.css" vordefiniert ist. -->
+            <br><br><hr><br><br>
+
+            <h1>Gerüchte</h1>
+            <!-- Mit <b> wird ein Text fett dargestellt. -->
+            <b>Passiv</b>: Die Spielleitung kann passiv für einen Media würfeln, um so festzulegen, ob den Media neue Gerüchte erreichen.<br>
+            <!-- <p> ist eine Textformatierung mit Zeilenumbruch. Hier wird es genutzt um mit dem "style" property eine Farbe zuzuweisen. Die Farben sind in "styles.css" vorgeschrieben. -->
+            <p id="colorTheme-1">Glaubwürdigkeit + 1W10</p> gegen <p id="colorTheme-2">das passive SG aus der Tabelle.</p>.
+
+            <br><br>
+
+            <b>Aktive</b>: Ein Media kann auch aktiv nach neuen Gerüchten suchen.
+            <p id="colorTheme-1">ATT Fertigkeit + 1W10</p> gegen <p id="colorTheme-2">das aktive SG aus der Tabelle.</p>.
+
+            <br><br>
+
+            <!-- Beginn der Tabelle mit den Schwierigkeitsstufen für Gerüchte. -->
+            <table id="myTable" style="width:80%">
+                <tr class="header">
+                    <th>Gerücht</th>
+                    <th>Beschreibung</th>
+                    <th>Passiv</th>
+                    <th>Aktiv</th>
+                </tr>
+                <tr>
+                    <td><center>Vages Gerücht</center></td>
+                    <td>Das Gerücht ist vage und beinhaltet nur das Notwendigste, um mit der Nachforschung beginnen zu können.</td>
+                    <td><center>7</center></td>
+                    <td><center>13</center></td>
+                </tr>
+                <tr>
+                    <td><center>Typisches Gerücht</center></td>
+                    <td>Plausibles Gerücht mit ein paar Informationen. Aber es müssen weitere Nachforschungen getroffen werden.</td>
+                    <td><center>9</center></td>
+                    <td><center>15</center></td>
+                </tr>
+                <tr>
+                    <td><center>Handfestes Gerücht</center></td>
+                    <td>Es enthält konkrete Informationen wie Namen und Orte. Weitere Nahforschungen können es jedoch noch mehr festigen.</td>
+                    <td><center>11</center></td>
+                    <td><center>17</center></td>
+                </tr>
+                <tr>
+                    <td><center>Detailliertes Gerücht</center></td>
+                    <td>Es ist im Grunde kein Gerücht mehr. Informationen und angebliche Beweise liegen mit Details vor.</td>
+                    <td><center>13</center></td>
+                    <td><center>21</center></td>
+                </tr>
+            </table>
+
+            <br><br><hr><br><br>
+
+            <h1>Reportagen und Beiträge</h1>
+            Wenn ein Media eine Reportage veröffentlicht, dann enthält diese folgende Parameter: <b id="colorTheme-1">Quelle, Publikum, Glaubhaftigkeit, Wirkung</b><br>
+            Wie gut eine Reportage ankommt, wird vom Rang der Glaubwürdigkeit bestimmt.<br>
+
+            <br><br>
+
+            <table id="myTable" style="width:80%">
+                <tr class="header">
+                    <th>Rang</th>
+                    <th>Quellen</th>
+                    <th>Publikum</th>
+                    <th>Glaubhaftigkeit</th>
+                    <th>Wirkung</th>
+                </tr>
+                <tr>
+                    <td><center>1-2</center></td>
+                    <td>Lokale Anführer, Großmuftis und Gangbosse.</td>
+                    <td>Unmittelbare Nachbarschaft.</td>
+                    <td><center>2/10</center></td>
+                    <td>Sehr kleine und höchstens schrittweise Veränderungen im lokalen Umkreis bei Kleinganoven.</td>
+                </tr>
+                <tr>
+                    <td><center>3-4</center></td>
+                    <td>Bekannte Personen, Gangbosse, Konzernmanager.</td>
+                    <td>Lokale Screamsheets und Datapools.</td>
+                    <td><center>2/10</center></td>
+                    <td>Lokale Polizei, Gangs und Stadtvertreter berücksichtigen Reportagen.</td>
+                </tr>
+                <tr>
+                    <td><center>5-6</center></td>
+                    <td>Gangbosse, lokale Politiker und lokale Promis.</td>
+                    <td>Stadtweit bekannt und auch im Fernsehen zu sehen.</td>
+                    <td><center>4/10</center></td>
+                    <td>Gangsterbosse und Konmanager berücksichtigen Reportagen und es hat Einfluss auf die ganze Stadt.</td>
+                </tr>
+                <tr>
+                    <td><center>7-8</center></td>
+                    <td>Lokaler Konvorstand, führende lokale Politiker, bekannte Promis.</td>
+                    <td>Landesweit bekannt.</td>
+                    <td><center>5/10</center></td>
+                    <td>Kann Änderungen in Städten und Landesteilen bewirken. Auch Gesetzesänderungen möglich.</td>
+                </tr>
+                <tr>
+                    <td><center>9</center></td>
+                    <td>Internationale Konvertreter, Landesübergreifende Promis, Landes Politiker.</td>
+                    <td>Kontinental bekannt.</td>
+                    <td><center>6/10</center></td>
+                    <td>Änderungen in Konz möglich oder in ganzen Ländern.</td>
+                </tr>
+                <tr>
+                    <td><center>10</center></td>
+                    <td>Konzernchef, Weltpolitik Vorstände, Weltweit bekannte Promis.</td>
+                    <td>Weltweit bekannt.</td>
+                    <td><center>7/10</center></td>
+                    <td>Weltweite Auswirkungen in Konz und Regierungen.</td>
+                </tr>
+            </table>
+
+            <br><br>
+
+        </center>
+    </div>
+</body>
+</html>

@@ -21,6 +21,7 @@
 			<a href="shelter.html">Unterkunft</a>
 			<hr>
 			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "jobs" liegen. -->
+			<a href="jobs/media.html">Media</a>
 			<a href="jobs/meditech.html">MediTech</a>
 			<a href="jobs/netrunner.html">Netrunner</a>
 			<a href="jobs/rockster.html">Rockster</a>
@@ -28,7 +29,6 @@
 		`
 	}
 }
-
 customElements.define('sidebar-menu', SidebarMenu)
 
 
@@ -56,6 +56,7 @@ class SidebarMenuJobs extends HTMLElement {
 			<a href="../shelter.html">Unterkunft</a>
 			<hr>
 			<!-- Hier können weitere Seiten eingetragen werden. Rollenspezifische Informationen ect. Die Seiten müssen im Ordner "jobs" liegen. -->
+			<a href="media.html">Media</a>
 			<a href="meditech.html">MediTech</a>
 			<a href="netrunner.html">Netrunner</a>
 			<a href="rockster.html">Rockster</a>
@@ -63,5 +64,4 @@ class SidebarMenuJobs extends HTMLElement {
 		`
 	}
 }
-
 customElements.define('sidebar-menu-jobs', SidebarMenuJobs)
