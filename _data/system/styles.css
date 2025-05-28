@@ -1,8 +1,49 @@
-﻿:root {
+﻿/* Hier werden Farbthema und Logo definiert. */
+:root {
+	/* pink-turquoise */
 	--color1: #d169c5; /* Color pink */
 	--color2: #19b396; /* Color turquoise */
-}
 
+	/* Vergesse nicht die URL für das Logo in ".logo" anzupassen, wenn du das Farbthema änderst! */
+	/* Hier drunter habe ich auch die anderen Farbthemen notiert. Wechsel die #Codes aus um die Farbe im ganzen Projekt zu ändern. */
+
+
+
+	/* blue */
+	/*--color1: #6512FF;*/ /* Color blue */
+	/*--color2: #76F0EC;*/ /* Color light blue */
+
+	/* blue-green */
+	/*--color1: #2FD2EB;*/ /* Color light blue */
+	/*--color2: #15ED76;*/ /* Color lime */
+
+	/* green */
+	/*--color1: #12FF4D;*/ /* Color lime */
+	/*--color2: #013319;*/ /* Color dark green */
+
+	/* pink-turquoise */
+	/*--color1: #d169c5;*/ /* Color pink */
+	/*--color2: #19b396;*/ /* Color turquoise */
+
+	/* red */
+	/*--color1: #FF1919;*/ /* Color red */
+	/*--color2: #420606;*/ /* Color dark red */
+
+	/* red-orange */
+	/*--color1: #ff9f19;*/ /* Color yellow */
+	/*--color2: #a60800;*/ /* Color red */
+
+	/* yellow */
+	/*--color1: #FCFC83;*/ /* Color eggshell yellow */
+	/*--color2: #787405;*/ /* Color dark yellow-green */
+}
+.logo {
+	width: 240px;
+	height: 100px;
+	background: URL('../images/logo-pink-turquoise.png'); /* Passe die URL an wenn du das Farbthema änderst! Die URL ist immer "logo-" gefolgt vom Farbthema. */
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 .colorfade {
 	background: linear-gradient(to right, var(--color1), var(--color2));
 	-webkit-background-clip: text;

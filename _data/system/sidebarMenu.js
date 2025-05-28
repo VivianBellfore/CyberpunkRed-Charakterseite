@@ -2,7 +2,7 @@
 	connectedCallback(){
 		this.innerHTML = `
 			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
-			<img src="images/cyberpunk-logo.png" width="240" height="100">
+			<div class="logo"></div>
 			<a href="Charakterblatt.html">Übersicht</a>
 			<!-- "hr" ist ein optischer Trennbalken der in "system/styles.css" definiert ist. -->
 			<hr>
@@ -37,7 +37,7 @@ class SidebarMenuJobs extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
-			<img src="../images/cyberpunk-logo.png" width="240" height="100">
+			<div class="logo"></div>
 			<a href="../Charakterblatt.html">Übersicht</a>
 			<!-- "hr" ist ein optischer Trennbalken der in "../system/styles.css" definiert ist. -->
 			<hr>
