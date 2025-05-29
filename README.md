@@ -43,10 +43,10 @@ Bei Fragen und Problemen helfe ich gerne über Discord weiter. Das hier ist mein
 <br>
 
 # Farbthema anpassen
-Ich habe diverse Farbmöglichkeiten im Projekt mit angefügt. Du kannst ganz einfach zwischen diesen wechseln.
-Dazu musst du nur in der "system/styles.css" ein paar Zeilen ändern und es wird im ganzen Projekt übernommen!
-	1. In der Funktion ":root" findest du die globalen Variablen "--color1" und "--color2". Diese geben mit hex color hashes die Farbvarianten an.
-Unter den gesetzten Werten stehen vorbereitete Farbthemen die du nutzen kannst. Wichtig, die Werte dürfen nur einmal vergeben werden, daher sind die anderen Beispiele alle mit /* */ auskommentiert!
+Ich habe diverse Farbmöglichkeiten im Projekt mit angefügt. Du kannst ganz einfach zwischen diesen wechseln.<br>
+Dazu musst du nur in der "system/styles.css" ein paar Zeilen ändern und es wird im ganzen Projekt übernommen!<br>
+	1. In der Funktion ":root" findest du die globalen Variablen "--color1" und "--color2". Diese geben mit hex color hashes die Farbvarianten an.<br>
+Unter den gesetzten Werten stehen vorbereitete Farbthemen die du nutzen kannst. Wichtig, die Werte dürfen nur einmal vergeben werden, daher sind die anderen Beispiele alle mit /* */ auskommentiert!<br>
 	2. In der Funktion ".logo" findest du das hinterlegte Cyberpunk Logo. Hier kannst du die URL zum passendem Farbthema anpassen.
 
 <br><br>
