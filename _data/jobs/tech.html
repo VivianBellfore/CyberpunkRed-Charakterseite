@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <!-- Hier laden wir die Navigation von der "sidebarMenu.js" javascript Datei. Und da wir uns auf einer Seite im jobs Unterordner befinden, laden wir die Funktion "sidebar-menu-jobs". -->
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Alles was sich zwischen <center> und </center> steht, wird zentriert und somit mittig auf der Webseite dargestellt. -->
+        <center>
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Bastler</h1>
+            Mit dieser Rollenfähigkeit kann der Tech diverse Dinge bauen, auseinander nehmen oder reparieren.<br>
+            Für jeden Punkt in der Rollenfähigkeit, kannst du einen Punkt in eine der möglichen Kompetenzen vergeben.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <!-- <hr> ist eine Trennlinie die in "styles.css" vordefiniert ist. -->
+            <br><br><hr><br><br>
+
+            <!-- <h3> definiert eine Überschrift. Mit id="colorTheme-1" setzen wir eine Farbe für den text. -->
+            <h3 id="colorTheme-1">Feldkompetenz</h3>
+            <br><br>
+            Du kannst deinen Feldkompetenzrang zu allen Proben dazu addieren, die folgende Fähigkeiten beinhalten:<br>
+            <!-- <ul> erzeugt eine unsortierte Liste. Mit <li> ertsellt man einen Eintrag in der Liste. -->
+            <ul class="centered">
+                <li>Basistechnick</li>
+                <li>Cybertech</li>
+                <li>Elektronik</li>
+                <li>Sicherheitstechnik</li>
+                <li>Waffentechnik</li>
+                <li>Bodenfahrzeugtechnik</li>
+                <li>Wasserfahrzeugtechnik</li>
+                <li>Luftfahrzeugtechnik</li>
+            </ul>
+
+            <br><br><hr><br><br>
+
+            <h3 id="colorTheme-1">Aufrüstungskompetenz</h3>
+            <br><br>
+
+            Du kannst einen Gegenstand einmalig verbessern. Dies sind deine Möglichkeiten:<br>
+            <ul class="centered">
+                <li>Menschlichkeitsverlust (keine Borgware) verringern. ( -1W6 wenn die Cyberware mindestens 2W6 hat )</li>
+                <li>Erhöhe Slotanzahl um +1.</li>
+                <li>Reperaturzeit für künftige Reparaturen halbieren.</li>
+                <li>Einhandwaffe versteckbar machen.</li>
+                <li>Waffe von Durchschnittlich auf Hervorragend verbessern.</li>
+                <li>Exotischer Waffe einen Aufsatzslot geben.</li>
+                <li>Exotische Waffe kann eine Munitionsvariation nutzen die nicht Basis ist.</li>
+                <li>EWrhöhe den SW eines Gegenstandes der mindestens SW1 hat um 1.</li>
+                <li>Fahrzeug aufrüsten für die ein Nomadenrollenrang 1 nötig wäre.</li>
+                <li>Selbst erfundene Aufrüstung installieren.</li>
+            </ul>
+
+            <br>
+            Probe zum Aufrüsten: <b id="colorTheme-2">TCH + TCH Fertigkeit + Aufrüstungskompetenz + 1W10</b>
+
+            <br><br><hr><br><br>
+
+            <h3 id="colorTheme-1">Herstellungskompetenz</h3>
+            <br><br>
+            Stelle einen Gegenstand aus geeigneten Materialien her.
+            <br><br>
+            Probe zum Herstellen: <b id="colorTheme-2">TCH + TCH Fertigkeit + Herstellungskompetenz + 1W10</b>
+
+            <br><br><hr><br><br>
+
+            <h3 id="colorTheme-1">Erfindungskompetenz</h3>
+            <br><br>
+            Erfinde in Absprache mit der SL einen neuen oder verbesserten Gegenstand.
+            <br><br>
+            Probe zum Erfinden: <b id="colorTheme-2">TCH + TCH Fertigkeit + Erfindungskompetenz + 1W10</b>
+
+            <br><br><hr><br><br>
+
+            <h3>SG für Aufrüstung/Herstellung/Erfindungen und Reperaturen</h3>
+            <!-- Beginn der Tabelle mit den Schwierigkeiten und Zeiten. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th><center>Preis</center></th>
+                    <th><center>SG</center></th>
+                    <th><center>Zeit</center></th>
+                </tr>
+                <tr>
+                    <td><center>Billig / Alltäglich</center></td>
+                    <td><center>9</center></td>
+                    <td><center>1 Stunde</center></td>
+                </tr>
+                <tr>
+                    <td><center>Teuer</center></td>
+                    <td><center>13</center></td>
+                    <td><center>6 Stunde</center></td>
+                </tr>
+                <tr>
+                    <td><center>Premium</center></td>
+                    <td><center>17</center></td>
+                    <td><center>1 Tag</center></td>
+                </tr>
+                <tr>
+                    <td><center>Kostspielig</center></td>
+                    <td><center>21</center></td>
+                    <td><center>1 Woche</center></td>
+                </tr>
+                <tr>
+                    <td><center>Sehr Kostspielig</center></td>
+                    <td><center>24</center></td>
+                    <td><center>2 Wochen</center></td>
+                </tr>
+                <tr>
+                    <td><center>Luxus</center></td>
+                    <td><center>29</center></td>
+                    <td><center>1 Monat</center></td>
+                </tr>
+                <tr>
+                    <td><center>Superluxus</center></td>
+                    <td><center>29</center></td>
+                    <td><center>1 Monat ( je 10.000€$ )</center></td>
+                </tr>
+            </table>
+
+            <br><br><br>
+        </center>
+    </div>
+</body>
+</html>

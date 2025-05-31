@@ -1,4 +1,4 @@
-﻿/* Hier werden Farbthema und Logo definiert. */
+/* Hier werden Farbthema und Logo definiert. */
 :root {
 	/* pink-turquoise */
 	--color1: #d169c5; /* Color pink */
@@ -181,4 +181,11 @@ ul.b {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
 	overflow: hidden;
+}
+ul.centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-position: inside;
+	padding-left: 0; /* remove default left padding */
 }

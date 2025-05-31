@@ -1,4 +1,4 @@
-﻿class SidebarMenu extends HTMLElement {
+class SidebarMenu extends HTMLElement {
 	connectedCallback(){
 		this.innerHTML = `
 			<!-- Das Cyberpunklogo, kann geändert werden. Lege das neue Logo im Ordner "images" ab und ändere hier den Dateinamen und den Typ. -->
@@ -26,6 +26,7 @@
 			<a href="jobs/netrunner.html">Netrunner</a>
 			<a href="jobs/rockster.html">Rockster</a>
 			<a href="jobs/solo.html">Solo</a>
+			<a href="jobs/tech.html">Tech</a>
 		`
 	}
 }
@@ -61,6 +62,7 @@ class SidebarMenuJobs extends HTMLElement {
 			<a href="netrunner.html">Netrunner</a>
 			<a href="rockster.html">Rockster</a>
 			<a href="solo.html">Solo</a>
+			<a href="tech.html">Tech</a>
 		`
 	}
 }
