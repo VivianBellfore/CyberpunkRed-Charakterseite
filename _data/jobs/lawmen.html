@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <!-- Hier laden wir die Navigation von der "sidebarMenu.js" javascript Datei. Und da wir uns auf einer Seite im jobs Unterordner befinden, laden wir die Funktion "sidebar-menu-jobs". -->
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Alles was sich zwischen <center> und </center> steht, wird zentriert und somit mittig auf der Webseite dargestellt. -->
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Verstärkung</h1>
+            Die Rollenfähigkeit des Gesetzeshüters gibt ihm die Möglichkeit andere Gesetzeshüter zur Verstärkung zu rufen.<br>
+            <br>
+            Um Verstärkung zu rufen wird ein 1W10 gewürfelt. Die Probe ist erfolgreich, wenn der Wurf nicht höher als dein Rang in Verstärkung ist.<br>
+            Wenn die Probe erfolgreich war wird 1W6 gewürfelt um festzulegen, nach wie vielen Runden die Verstärkung eintrifft.<br>
+            <br>
+            Wird dabei eine 6 gwürfelt, wird die eintreffende Truppe einen Rang höher sein.<br>
+            Wenn du Rang 10 in Verstärkung hast und eine 6 würfelst, werden zwei Truppen auftauchen.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <br><br><br>
+
+            <!-- <h3> definiert eine Überschrift. -->
+            <h3>Verstärkungsränge</h3>
+            <!-- Beginn der Tabelle mit den Punktekosten. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th><center>Rang</center></th>       <!-- Tabellenkopf Rang -->
+                    <th><center>Kampfwert</center></th>  <!-- Tabellenkopf Kampfwert -->
+                    <th><center>SW</center></th>         <!-- Tabellenkopf Schwierigkeit -->
+                    <th><center>TP</center></th>         <!-- Tabellenkopf Trefferpunkte -->
+                    <th><center>BEW & KRA</center></th>  <!-- Tabellenkopf Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>1-2</center></td>   <!-- Rang -->
+                    <td><center>8</center></td>     <!-- Kampfwert -->
+                    <td><center>7</center></td>     <!-- Schwierigkeit -->
+                    <td><center>20</center></td>    <!-- Treffpunkt -->
+                    <td><center>4</center></td>     <!-- Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>3-4</center></td>   <!-- Rang -->
+                    <td><center>10</center></td>    <!-- Kampfwert -->
+                    <td><center>7</center></td>     <!-- Schwierigkeit -->
+                    <td><center>25</center></td>    <!-- Treffpunkt -->
+                    <td><center>5</center></td>     <!-- Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>5-7</center></td>   <!-- Rang -->
+                    <td><center>14</center></td>    <!-- Kampfwert -->
+                    <td><center>13</center></td>    <!-- Schwierigkeit -->
+                    <td><center>35</center></td>    <!-- Treffpunkt -->
+                    <td><center>4</center></td>     <!-- Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>8</center></td>   <!-- Rang -->
+                    <td><center>16</center></td>  <!-- Kampfwert -->
+                    <td><center>15</center></td>  <!-- Schwierigkeit -->
+                    <td><center>50</center></td>  <!-- Treffpunkt -->
+                    <td><center>6</center></td>   <!-- Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>9</center></td>   <!-- Rang -->
+                    <td><center>15</center></td>  <!-- Kampfwert -->
+                    <td><center>18</center></td>  <!-- Schwierigkeit -->
+                    <td><center>35</center></td>  <!-- Treffpunkt -->
+                    <td><center>4</center></td>   <!-- Bewegung & Kraft -->
+                </tr>
+                <tr>
+                    <td><center>10</center></td>   <!-- Rang -->
+                    <td><center>14</center></td>   <!-- Kampfwert -->
+                    <td><center>11</center></td>   <!-- Schwierigkeit -->
+                    <td><center>35</center></td>   <!-- Treffpunkt -->
+                    <td><center>6</center></td>    <!-- Bewegung & Kraft -->
+                </tr>
+            </table>
+
+        </center>
+    </div>
+</body>
+</html>
