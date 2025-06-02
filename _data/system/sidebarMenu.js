@@ -26,6 +26,7 @@ class SidebarMenu extends HTMLElement {
 			<a href="jobs/meditech.html">MediTech</a>
 			<a href="jobs/netrunner.html">Netrunner</a>
 			<a href="jobs/rockster.html">Rockster</a>
+			<a href="jobs/fixer.html">Schieber</a>
 			<a href="jobs/solo.html">Solo</a>
 			<a href="jobs/tech.html">Tech</a>
 		`
@@ -63,6 +64,7 @@ class SidebarMenuJobs extends HTMLElement {
 			<a href="meditech.html">MediTech</a>
 			<a href="netrunner.html">Netrunner</a>
 			<a href="rockster.html">Rockster</a>
+			<a href="fixer.html">Schieber</a>
 			<a href="solo.html">Solo</a>
 			<a href="tech.html">Tech</a>
 		`

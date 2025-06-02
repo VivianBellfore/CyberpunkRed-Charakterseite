@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <!-- Hier laden wir die Navigation von der "sidebarMenu.js" javascript Datei. Und da wir uns auf einer Seite im jobs Unterordner befinden, laden wir die Funktion "sidebar-menu-jobs". -->
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Alles was sich zwischen <center> und </center> steht, wird zentriert und somit mittig auf der Webseite dargestellt. -->
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Beschaffung</h1>
+            Schieber haben Kontakte und Kentnisse im Untergrund und handel, die es ihnen ermöglichen, alle möglichen Waren zu erwerben oder zu veräußern.<br>
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen den Texten. -->
+            <br><br>
+
+            <h3>Feilschen</h3>
+            Probe: <b id="colorTheme-1">COO + Handeln + Beschaffungsrang + 1W10</b> gegen <b id="colorTheme-2">COO + Handeln + Beschaffungsrang ( falls es auch ein Schieber ist ) + 1W10</b>
+
+    <br><br><br>
+
+    <h3>Beschaffungsränge</h3>
+    <!-- Beginn der Tabelle mit den Punktekosten. -->
+    <table id="myTable" style="width: 75%">
+        <tr class="header">
+            <th><center>Rang</center></th>                  <!-- Tabellenkopf Rang -->
+            <th><center>Kontakte & Kunden</center></th>     <!-- Tabellenkopf Kontakte & Kunden -->
+            <th><center>Verfügbarkeit</center></th>         <!-- Tabellenkopf Verfügbarkeit -->
+            <th><center>Feilschen</center></th>             <!-- Tabellenkopf Feilschen -->
+            <th><center>Anpassen</center></th>              <!-- Tabellenkopf Anpassen -->
+        </tr>
+        <tr>
+            <td><center>1-2</center></td>                                       <!-- Rang -->
+            <td>Lokaler Großmufti, Gangboss oder Führung im Viertel</td>        <!-- Kontakte & Kunden -->
+            <td>Billie und alltägliche Dinge in geringer Stückzahl.</td>        <!-- Verfügbarkeit -->
+            <td>10% unter oder über dem Marktwert bei Kauf und Verkauf.</td>    <!-- Feilschen -->
+            <td>Nachbarschaft und lokale Gangbosse.</td>                        <!-- Anpassen -->
+        </tr>
+        <tr>
+            <td><center>3-4</center></td>                                                               <!-- Rang -->
+            <td>Gangboss im Viertel, kleiner Politiker, Konzerner oder bekannte Person im Viertel.</td> <!-- Kontakte & Kunden -->
+            <td>Kostspielige Dinge in geringer Stückzahl.</td>                                          <!-- Verfügbarkeit -->
+            <td>Kaufe 5 und erhalte 1 geschenkt dazu.</td>                                              <!-- Feilschen -->
+            <td>Eine weitere Kultus und Sprache dazu lernen.</td>                                       <!-- Anpassen -->
+        </tr>
+        <tr>
+            <td><center>5-6</center></td>                                                           <!-- Rang -->
+            <td>Gangboss, Stadtrat oder Promi im Viertel.</td>                                      <!-- Kontakte & Kunden -->
+            <td>Nachtmarkt selber organisieren und Superluxusgegenstände handeln können.</td>       <!-- Verfügbarkeit -->
+            <td>+20% Vergütungserhöhung für einen Job.</td>                                         <!-- Feilschen -->
+            <td>Du kennst nun 2 Kulturen und deren Sprache zusätzlich. ( Erste von rang 3-4 )</td> <!-- Anpassen -->
+        </tr>
+        <tr>
+            <td><center>7-8</center></td>                                                                                                           <!-- Rang -->
+            <td>Konzernmanager, Bürgermeister oder Stdtweiter Promi.</td>                                                                           <!-- Kontakte & Kunden -->
+            <td>Sehr kostspielige Dinge in geringer Stückzahl.</td>                                                                                 <!-- Verfügbarkeit -->
+            <td>Luxus- oder Superluxusgegenstände in zwei Raten zahlen. ( Zahlst du einmal nicht, wird niemand mehr dieses Angebot machen! )</td>   <!-- Feilschen -->
+            <td>Du kennst nun 3 Kulturen und deren Sprache zusätzlich. ( Erste zwei von rang 3-6 )</td>                                             <!-- Anpassen -->
+        </tr>
+        <tr>
+            <td><center>9</center></td>                                                                             <!-- Rang -->
+            <td>Lokaler Konzernvorstand, Landespolitiker oder international bekannter Promi.</td>                   <!-- Kontakte & Kunden -->
+            <td>Luxus Dinge in geringer Stückzahl. Abhalten eines Mitternahtsmarktes mit Gangbossen möglich.</td>   <!-- Verfügbarkeit -->
+            <td>20% unter oder über dem Marktwert bei Kauf und Verkauf.</td>                                        <!-- Feilschen -->
+            <td>Auch gute Kentnisse und Kontakte in Konzernen und der Regierung.</td>                               <!-- Anpassen -->
+        </tr>
+        <tr>
+            <td><center>10</center></td>                                                        <!-- Rang -->
+            <td>Weltenlenker, internationale Konzerleiter oder weltweit bekannter Promi.</td>   <!-- Kontakte & Kunden -->
+            <td>Superluxus Dinge in geringer Stückzahl.</td>                                    <!-- Verfügbarkeit -->
+            <td>Doppelte Bezahlung für einen Job.</td>                                          <!-- Feilschen -->
+            <td>Du kannst dich überall unter mischen und unbemerkt einfügen.</td>               <!-- Anpassen -->
+        </tr>
+    </table>
+
+</center>
+    </div>
+</body>
+</html>
