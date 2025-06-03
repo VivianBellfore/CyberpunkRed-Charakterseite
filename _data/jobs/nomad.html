@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Nicht ändern. Hier wird die formatierung der Seite geladen. -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Im "_data" Ordner befindet sich die Datei "styles.css". In dieser Datei sind die Styles für alle Seiten angegeben. Änderungen werden automatisch auf alle Seiten übertragen. -->
+    <link rel="stylesheet" href="../system/styles.css">
+</head>
+
+
+<body>
+    <!-- Die "sidebar" ist der linke Rand aller Seiten den wir vordefiniert haben in "styles.css". Dort befindet sich das Navigationsmenü um durch die Seiten klicken zu können. -->
+    <div class="sidebar">
+        <!-- Hier laden wir die Navigation von der "sidebarMenu.js" javascript Datei. Und da wir uns auf einer Seite im jobs Unterordner befinden, laden wir die Funktion "sidebar-menu-jobs". -->
+        <sidebar-menu-jobs></sidebar-menu-jobs>
+        <script src="../system/sidebarMenu.js"></script>
+    </div>
+
+
+
+    <!-- Das "main" ist der eigentliche Bereich der Seiten in denen deren Inhalt neben der sidebar angezeigt wird. Jeder Seiteninhalt muss als innerhalb dieser Klasse stehen. -->
+    <div class="main">
+        <!-- Alles was sich zwischen <center> und </center> steht, wird zentriert und somit mittig auf der Webseite dargestellt. -->
+        <center>
+
+            <!-- <h1> definiert eine Überschrift. -->
+            <h1>Moto</h1>
+            Die Rollenfähigkeit der Nomaden bezeiht sich auf ihre Kenntnisse rund um Fahrzeuge.
+
+            <!-- <br> ist ein Zeilenumbruch und sorgt hier für einen Abstand zwischen dem Text und der Tabelle. -->
+            <!-- <hr> ist eine Trennlinie die in "styles.css" vordefiniert ist. -->
+            <br><br><hr><br><br>
+
+            <!-- <h3> definiert eine Überschrift. -->
+            <h3 id="colorTheme-1">Vertrautheit mit Nomadenfahrzeug</h3>
+            <br><br>
+            Wenn ein Nomade eine Probe in Bezug auf Fahren machen muss, addiert er immer seinen Motorang hinzu.
+
+            <br><br><hr><br><br>
+
+            <h3 id="colorTheme-2">Familienfuhrpark</h3>
+            <br><br>
+            Wenn ein Noamde seine Rollenfähigkeit steigert, dann kann er eines von beiden tun:<br>
+
+            <br>
+
+            <!-- <ul> erzeugt eine unsortierte Liste. Mit <li> ertsellt man einen Eintrag in der Liste. -->
+            <ul class="centered">
+                <li>Ein weiteres Fahrzeug erhalten.</li>
+                <li>Fahrzeug Aufrüsten oder Verbessern.</li>
+            </ul>
+
+            <br><br>
+
+            <h3 id="colorTheme-1">Fahrzeuge nach Rang</h3>
+            <br><br>
+            <!-- Beginn der Tabelle mit den Fahrzeugen. -->
+            <table id="myTable" style="width:35%">
+                <tr class="header">
+                    <th><center>Rang</center></th>
+                    <th><center>Familienfahrzeug</center></th>
+                </tr>
+                <tr>
+                    <td><center>1-4</center></td>
+                    <td><center>Bodenfahrzeug, Tragschrauber, Jetski, Radbike</center></td>
+                </tr>
+                <tr>
+                    <td><center>5-6</center></td>
+                    <td><center>Helikopter, Hochleistungsboden-Fahrzeug, Schnellbot</center></td>
+                </tr>
+                <tr>
+                    <td><center>7-8</center></td>
+                    <td><center>AV-4, Kajutboot, Superbike</center></td>
+                </tr>
+                <tr>
+                    <td><center>9-10</center></td>
+                    <td><center>Aerozep, Superboden-Fahrzeug, Jacht</center></td>
+                </tr>
+            </table>
+
+        </center>
+    </div>
+</body>
+</html>
